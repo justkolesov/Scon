@@ -1,0 +1,128 @@
+!!python/object:argparse.Namespace
+baryproj: !!python/object:argparse.Namespace
+  logging: !!python/object:argparse.Namespace
+    log_path: /home/mounted/LargeScaleOptimalTransport/baryproj/exp/celeba
+    verbose_stderr: info
+  training: !!python/object:argparse.Namespace
+    n_iters: 1
+compatibility: !!python/object:argparse.Namespace
+  logging: !!python/object:argparse.Namespace
+    log_path: /home/mounted/LargeScaleOptimalTransport/compatibility/exp/celeba
+    resume_training: false
+    verbose_stderr: info
+  model: !!python/object:argparse.Namespace
+    architecture: fcn
+    hidden_layers:
+    - 2048
+    - 2048
+    - 2048
+    - 2048
+    - 2048
+    - 2048
+    - 2048
+    - 2048
+  optim: !!python/object:argparse.Namespace
+    amsgrad: false
+    beta1: 0.9
+    eps: 1.0e-09
+    lr: 1.0e-05
+    optimizer: Adam
+    weight_decay: 0.0
+  training: !!python/object:argparse.Namespace
+    batch_size: 64
+    n_iters: 5001
+    num_batches: 100
+    seed: 42
+    snapshot_freq: 1000
+device_gpus: !!python/object:argparse.Namespace
+  glow_device: cuda:0
+  ngpu:
+  - 0
+  - 1
+  - 2
+  samples_device: cuda:0
+logging: !!python/object:argparse.Namespace
+  verbose_logger: info
+  verbose_stderr: info
+meta: !!python/object:argparse.Namespace
+  divergence: KL
+  problem_name: CELEBA
+  regularization: 250
+  task: superres
+ncsn: !!python/object:argparse.Namespace
+  device: cuda:0
+  fast_fid: !!python/object:argparse.Namespace
+    batch_size: 1000
+    begin_ckpt: 5000
+    end_ckpt: 210000
+    ensemble: false
+    n_steps_each: 5
+    num_sources: 1000
+    step_lr: 3.3e-06
+    verbose: false
+  model: !!python/object:argparse.Namespace
+    ema: true
+    ema_rate: 0.999
+    ngf: 128
+    nonlinearity: elu
+    normalization: InstanceNorm++
+    num_classes: 500
+    sigma_begin: 90
+    sigma_dist: geometric
+    sigma_end: 0.01
+    spec_norm: false
+  ncsn_path: /home/mounted/LargeScaleOptimalTransport/ncsn_models
+  sampling: !!python/object:argparse.Namespace
+    ckpt_id: 210000
+    data_init: true
+    denoise: true
+    fid: true
+    final_only: true
+    inpainting: false
+    interpolation: false
+    log_path: pretrained/ncsn/celeba
+    n_interpolations: 15
+    n_steps_each: 7
+    num_samples4fid: 20259
+    samples_per_source: 1
+    sources_per_batch: 250
+    step_lr: 1.0e-06
+scones: !!python/object:argparse.Namespace
+  compatibility: !!python/object:argparse.Namespace
+    ckpt_id: null
+    log_path: /home/mounted/LargeScaleOptimalTransport/compatibility/exp/celeba
+  logging: !!python/object:argparse.Namespace
+    log_path: /home/mounted/LargeScaleOptimalTransport/scones/exp/celeba
+    verbose_stderr: info
+  training: !!python/object:argparse.Namespace
+    batch_size: 64
+    num_batches: 100
+    snapshot_iter: 100
+source: !!python/object:argparse.Namespace
+  data: !!python/object:argparse.Namespace
+    channels: 3
+    dataset: CELEBA-low
+    dim: 12288
+    gaussian_dequantization: false
+    image_size: 64
+    logit_transform: false
+    num_workers: 0
+    random_flip: false
+    rescaled: false
+    uniform_dequantization: false
+target: !!python/object:argparse.Namespace
+  data: !!python/object:argparse.Namespace
+    channels: 3
+    dataset: CELEBA-high
+    dim: 12288
+    gaussian_dequantization: false
+    image_size: 64
+    logit_transform: false
+    num_workers: 0
+    random_flip: false
+    rescaled: false
+    uniform_dequantization: false
+transport: !!python/object:argparse.Namespace
+  coeff: 250
+  cost: half-l2-sq
+  regularization: entropy

@@ -1,0 +1,4 @@
+INFO - main.py - 2023-05-15 16:17:40,560 - Using device: cuda:0
+INFO - main.py - 2023-05-15 16:17:40,561 - Using seed 42
+INFO - main.py - 2023-05-15 17:12:00,806 - Using device: cuda:0
+INFO - main.py - 2023-05-15 17:12:00,807 - Using seed 42

@@ -1,0 +1,167 @@
+!!python/object:argparse.Namespace
+baryproj: !!python/object:argparse.Namespace
+  compatibility: !!python/object:argparse.Namespace
+    ckpt_id: null
+    model: !!python/object:argparse.Namespace
+      architecture: fcn
+      hidden_layers:
+      - 2048
+      - 2048
+      - 2048
+      - 2048
+      - 2048
+      - 2048
+      - 2048
+      - 2048
+  logging: !!python/object:argparse.Namespace
+    log_path: /home/mounted/LargeScaleOptimalTransport/baryproj/exp/mixgauss
+    resume_training: false
+    verbose_stderr: info
+  model: !!python/object:argparse.Namespace
+    architecture: fcn
+    hidden_layers:
+    - 1024
+    - 2048
+    - 4096
+    - 2048
+    - 1024
+  optim: !!python/object:argparse.Namespace
+    amsgrad: false
+    beta1: 0.9
+    beta2: 0.999
+    eps: 1.0e-08
+    lr: 0.001
+    optimizer: Adam
+    weight_decay: 0.0
+  training: !!python/object:argparse.Namespace
+    batch_size: 256
+    metrics_freq: 100
+    n_iters: 101
+    sample_freq: 100
+    seed: 42
+    snapshot_freq: 100
+compatibility: !!python/object:argparse.Namespace
+  logging: !!python/object:argparse.Namespace
+    log_path: /home/mounted/LargeScaleOptimalTransport/compatibility/exp/mixgauss
+    resume_training: false
+    verbose_stderr: info
+  model: !!python/object:argparse.Namespace
+    architecture: fcn
+    hidden_layers:
+    - 2048
+    - 2048
+    - 2048
+    - 2048
+    - 2048
+    - 2048
+    - 2048
+    - 2048
+  optim: !!python/object:argparse.Namespace
+    amsgrad: false
+    beta1: 0.9
+    beta2: 0.999
+    eps: 1.0e-08
+    lr: 1.0e-05
+    optimizer: Adam
+    weight_decay: 0.0
+  training: !!python/object:argparse.Namespace
+    batch_size: 1024
+    n_iters: 101
+    seed: 42
+    snapshot_freq: 100
+device: !!python/object/apply:torch.device
+- cuda
+- 1
+device_gpus: !!python/object:argparse.Namespace
+  ngpu: 1
+logging: !!python/object:argparse.Namespace
+  verbose_logger: info
+  verbose_stderr: info
+meta: !!python/object:argparse.Namespace
+  divergence: ''
+  problem_name: mixgauss_2
+  regularization: ''
+  task: ''
+metrics: !!python/object:argparse.Namespace
+  samp_metrics: 10000
+ncsn: !!python/object:argparse.Namespace
+  fast_fid: !!python/object:argparse.Namespace
+    batch_size: 1000
+    begin_ckpt: 5000
+    end_ckpt: 210000
+    ensemble: false
+    n_steps_each: 15
+    num_sources: 1000
+    step_lr: 3.3e-06
+    verbose: false
+  model: !!python/object:argparse.Namespace
+    ema: true
+    ema_rate: 0.999
+    ngf: 128
+    nonlinearity: elu
+    normalization: InstanceNorm++
+    num_classes: 500
+    sigma_begin: 90
+    sigma_dist: geometric
+    sigma_end: 0.01
+    spec_norm: false
+  sampling: !!python/object:argparse.Namespace
+    ckpt_id: 210000
+    data_init: true
+    denoise: true
+    fid: true
+    final_only: true
+    inpainting: false
+    interpolation: false
+    log_path: pretrained/ncsn/celeba
+    n_interpolations: 15
+    n_steps_each: 202
+    num_samples4fid: 5000
+    sample_every: 1
+    samples_per_source: 1
+    sources_per_batch: 1024
+    step_lr: 0.0015
+scones: !!python/object:argparse.Namespace
+  compatibility: !!python/object:argparse.Namespace
+    ckpt_id: null
+    log_path: /home/mounted/LargeScaleOptimalTransport/compatibility/exp/mixgauss
+  eval_gmm: !!python/object:argparse.Namespace
+    batch_size: 1024
+    n_components: 5
+  logging: !!python/object:argparse.Namespace
+    log_path: /home/mounted/LargeScaleOptimalTransport/scones/exp/mixgauss
+    verbose_stderr: info
+  sampling: !!python/object:argparse.Namespace
+    snapshot_freq: 200
+  training: !!python/object:argparse.Namespace
+    batch_size: 1024
+source: !!python/object:argparse.Namespace
+  data: !!python/object:argparse.Namespace
+    benchmark_data_path: /home/mounted/EntropicOTBenchmark/benchmark_data
+    channels: 0
+    dataset: GAUSSIAN
+    dim: 2
+    gaussian_dequantization: false
+    image_size: 0
+    logit_transform: false
+    num_workers: 0
+    random_flip: false
+    rescaled: false
+    uniform_dequantization: false
+target: !!python/object:argparse.Namespace
+  data: !!python/object:argparse.Namespace
+    benchmark_data_path: /home/mounted/EntropicOTBenchmark/benchmark_data
+    channels: 0
+    dataset: GAUSSIAN
+    dim: 2
+    gaussian_dequantization: false
+    image_size: 0
+    logit_transform: false
+    num_workers: 0
+    random_flip: false
+    rescaled: false
+    uniform_dequantization: false
+transport: !!python/object:argparse.Namespace
+  coeff: 10
+  cost: half-l2-sq
+  regularization: entropy

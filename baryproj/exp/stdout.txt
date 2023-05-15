@@ -1,0 +1,132 @@
+INFO - main.py - 2023-04-17 12:08:34,214 - Using device: cuda:2
+INFO - main.py - 2023-04-17 12:08:34,215 - Using seed 42
+ERROR - main.py - 2023-04-17 12:08:36,775 - Traceback (most recent call last):
+  File "main.py", line 165, in main
+    runner.train()
+  File "/home/mounted/LargeScaleOptimalTransport/compatibility/runners/cpat_runner.py", line 87, in train
+    elif self.config.meta.problem_name("images"):
+TypeError: 'str' object is not callable
+
+INFO - main.py - 2023-04-17 12:09:43,345 - Using device: cuda:2
+INFO - main.py - 2023-04-17 12:09:43,345 - Using seed 42
+ERROR - main.py - 2023-04-17 12:09:45,700 - Traceback (most recent call last):
+  File "main.py", line 165, in main
+    runner.train()
+  File "/home/mounted/LargeScaleOptimalTransport/compatibility/runners/cpat_runner.py", line 89, in train
+    benchmark = get_images_benchmark(batch_size=self.config.compatibility.training.batch_size,
+NameError: name 'get_images_benchmark' is not defined
+
+INFO - main.py - 2023-04-17 12:10:25,291 - Using device: cuda:2
+INFO - main.py - 2023-04-17 12:10:25,292 - Using seed 42
+ERROR - main.py - 2023-04-17 12:10:27,574 - Traceback (most recent call last):
+  File "main.py", line 165, in main
+    runner.train()
+  File "/home/mounted/LargeScaleOptimalTransport/compatibility/runners/cpat_runner.py", line 90, in train
+    eps=self.config.transport.coeff,glow_device=self.config.device.glow_device,
+AttributeError: 'torch.device' object has no attribute 'glow_device'
+
+INFO - main.py - 2023-04-17 12:10:57,759 - Using device: cuda:2
+INFO - main.py - 2023-04-17 12:10:57,759 - Using seed 42
+ERROR - main.py - 2023-04-17 12:11:06,313 - Traceback (most recent call last):
+  File "main.py", line 165, in main
+    runner.train()
+  File "/home/mounted/LargeScaleOptimalTransport/compatibility/runners/cpat_runner.py", line 89, in train
+    benchmark = get_image_benchmark(batch_size=self.config.compatibility.training.batch_size,
+  File "/opt/anaconda3/lib/python3.8/site-packages/eot_benchmark-0.21-py3.8.egg/eot_benchmark/image_benchmark.py", line 160, in get_image_benchmark
+    download_image_benchmark_files()
+  File "/opt/anaconda3/lib/python3.8/site-packages/eot_benchmark-0.21-py3.8.egg/eot_benchmark/image_benchmark.py", line 154, in download_image_benchmark_files
+    with ZipFile(os.path.join(path, "glow_sampler_generated_data.zip"), 'r') as zip_ref:
+  File "/opt/anaconda3/lib/python3.8/zipfile.py", line 1251, in __init__
+    self.fp = io.open(file, filemode)
+FileNotFoundError: [Errno 2] No such file or directory: '/root/eot_benchmark_data/image_benchmark/glow_sampler_generated_data.zip'
+
+INFO - main.py - 2023-04-17 12:37:13,112 - Using device: cuda:2
+INFO - main.py - 2023-04-17 12:37:13,113 - Using seed 42
+ERROR - main.py - 2023-04-17 12:37:21,353 - Traceback (most recent call last):
+  File "main.py", line 165, in main
+    runner.train()
+  File "/home/mounted/LargeScaleOptimalTransport/compatibility/runners/cpat_runner.py", line 89, in train
+    benchmark = get_image_benchmark(batch_size=self.config.compatibility.training.batch_size,
+  File "/opt/anaconda3/lib/python3.8/site-packages/eot_benchmark-0.21-py3.8.egg/eot_benchmark/image_benchmark.py", line 160, in get_image_benchmark
+    download_image_benchmark_files()
+  File "/opt/anaconda3/lib/python3.8/site-packages/eot_benchmark-0.21-py3.8.egg/eot_benchmark/image_benchmark.py", line 154, in download_image_benchmark_files
+    with ZipFile(os.path.join(path, "glow_sampler_generated_data.zip"), 'r') as zip_ref:
+  File "/opt/anaconda3/lib/python3.8/zipfile.py", line 1251, in __init__
+    self.fp = io.open(file, filemode)
+FileNotFoundError: [Errno 2] No such file or directory: '/root/eot_benchmark_data/image_benchmark/glow_sampler_generated_data.zip'
+
+INFO - main.py - 2023-04-17 13:06:18,580 - Using device: cuda:2
+INFO - main.py - 2023-04-17 13:06:18,581 - Using seed 42
+INFO - cpat_runner.py - 2023-04-17 13:08:31,718 - Optimizing the compatibility function.
+INFO - main.py - 2023-04-17 13:10:41,167 - Using device: cuda:2
+INFO - main.py - 2023-04-17 13:10:41,168 - Using seed 42
+INFO - cpat_runner.py - 2023-04-17 13:11:19,128 - Optimizing the compatibility function.
+INFO - main.py - 2023-04-17 16:11:07,000 - Using device: cuda:2
+INFO - main.py - 2023-04-17 16:11:07,001 - Using seed 42
+INFO - cpat_runner.py - 2023-04-17 16:11:44,733 - Optimizing the compatibility function.
+INFO - main.py - 2023-04-17 16:14:18,756 - Using device: cuda:2
+INFO - main.py - 2023-04-17 16:14:18,756 - Using seed 42
+ERROR - main.py - 2023-04-17 16:14:21,183 - Traceback (most recent call last):
+  File "main.py", line 165, in main
+    runner.train()
+  File "/home/mounted/LargeScaleOptimalTransport/compatibility/runners/cpat_runner.py", line 89, in train
+    benchmark = get_image_benchmark(batch_size=self.config.compatibility.training.batch_size,
+  File "/opt/anaconda3/lib/python3.8/site-packages/eot_benchmark-0.21-py3.8.egg/eot_benchmark/image_benchmark.py", line 162, in get_image_benchmark
+    X_test_sampler = load_input_test_image_sampler(eps=eps, batch_size=batch_size, device=samples_device, num_workers=num_workers)
+  File "/opt/anaconda3/lib/python3.8/site-packages/eot_benchmark-0.21-py3.8.egg/eot_benchmark/image_benchmark.py", line 108, in load_input_test_image_sampler
+    X, Y = load_test_image_pairs(eps)
+  File "/opt/anaconda3/lib/python3.8/site-packages/eot_benchmark-0.21-py3.8.egg/eot_benchmark/image_benchmark.py", line 101, in load_test_image_pairs
+    image_pairs = torch.load(path)
+  File "/opt/anaconda3/lib/python3.8/site-packages/torch/serialization.py", line 579, in load
+    with _open_file_like(f, 'rb') as opened_file:
+  File "/opt/anaconda3/lib/python3.8/site-packages/torch/serialization.py", line 230, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/opt/anaconda3/lib/python3.8/site-packages/torch/serialization.py", line 211, in __init__
+    super(_open_file, self).__init__(open(name, mode))
+FileNotFoundError: [Errno 2] No such file or directory: '/root/eot_benchmark_data/image_benchmark/glow_sampler_generated_data/glow_generated_pairs_images_eps_100.torch'
+
+INFO - main.py - 2023-04-23 08:30:04,286 - Using device: cuda:2
+INFO - main.py - 2023-04-23 08:30:04,288 - Using seed 42
+ERROR - main.py - 2023-04-23 08:30:06,648 - Traceback (most recent call last):
+  File "main.py", line 165, in main
+    runner.train()
+  File "/home/mounted/LargeScaleOptimalTransport/compatibility/runners/cpat_runner.py", line 89, in train
+    benchmark = get_image_benchmark(batch_size=self.config.compatibility.training.batch_size,
+  File "/opt/anaconda3/lib/python3.8/site-packages/eot_benchmark-0.21-py3.8.egg/eot_benchmark/image_benchmark.py", line 162, in get_image_benchmark
+    X_test_sampler = load_input_test_image_sampler(eps=eps, batch_size=batch_size, device=samples_device, num_workers=num_workers)
+  File "/opt/anaconda3/lib/python3.8/site-packages/eot_benchmark-0.21-py3.8.egg/eot_benchmark/image_benchmark.py", line 108, in load_input_test_image_sampler
+    X, Y = load_test_image_pairs(eps)
+  File "/opt/anaconda3/lib/python3.8/site-packages/eot_benchmark-0.21-py3.8.egg/eot_benchmark/image_benchmark.py", line 101, in load_test_image_pairs
+    image_pairs = torch.load(path)
+  File "/opt/anaconda3/lib/python3.8/site-packages/torch/serialization.py", line 581, in load
+    with _open_file_like(f, 'rb') as opened_file:
+  File "/opt/anaconda3/lib/python3.8/site-packages/torch/serialization.py", line 230, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/opt/anaconda3/lib/python3.8/site-packages/torch/serialization.py", line 211, in __init__
+    super(_open_file, self).__init__(open(name, mode))
+FileNotFoundError: [Errno 2] No such file or directory: '/root/eot_benchmark_data/image_benchmark/glow_sampler_generated_data/glow_generated_pairs_images_eps_100.torch'
+
+INFO - main.py - 2023-04-23 08:32:31,221 - Using device: cuda:2
+INFO - main.py - 2023-04-23 08:32:31,221 - Using seed 42
+ERROR - main.py - 2023-04-23 08:32:33,475 - Traceback (most recent call last):
+  File "main.py", line 165, in main
+    runner.train()
+  File "/home/mounted/LargeScaleOptimalTransport/compatibility/runners/cpat_runner.py", line 89, in train
+    benchmark = get_image_benchmark(batch_size=self.config.compatibility.training.batch_size,
+  File "/opt/anaconda3/lib/python3.8/site-packages/eot_benchmark-0.24-py3.8.egg/eot_benchmark/image_benchmark.py", line 162, in get_image_benchmark
+    X_test_sampler = load_input_test_image_sampler(eps=eps, batch_size=batch_size, device=samples_device, num_workers=num_workers)
+  File "/opt/anaconda3/lib/python3.8/site-packages/eot_benchmark-0.24-py3.8.egg/eot_benchmark/image_benchmark.py", line 108, in load_input_test_image_sampler
+    X, Y = load_test_image_pairs(eps)
+  File "/opt/anaconda3/lib/python3.8/site-packages/eot_benchmark-0.24-py3.8.egg/eot_benchmark/image_benchmark.py", line 101, in load_test_image_pairs
+    image_pairs = torch.load(path)
+  File "/opt/anaconda3/lib/python3.8/site-packages/torch/serialization.py", line 581, in load
+    with _open_file_like(f, 'rb') as opened_file:
+  File "/opt/anaconda3/lib/python3.8/site-packages/torch/serialization.py", line 230, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/opt/anaconda3/lib/python3.8/site-packages/torch/serialization.py", line 211, in __init__
+    super(_open_file, self).__init__(open(name, mode))
+FileNotFoundError: [Errno 2] No such file or directory: '/root/eot_benchmark_data/image_benchmark/glow_sampler_generated_data/glow_generated_pairs_images_eps_100.torch'
+
+INFO - main.py - 2023-04-23 12:28:00,654 - Using device: cuda:2
+INFO - main.py - 2023-04-23 12:28:00,655 - Using seed 42
+INFO - cpat_runner.py - 2023-04-23 12:31:15,956 - Optimizing the compatibility function.

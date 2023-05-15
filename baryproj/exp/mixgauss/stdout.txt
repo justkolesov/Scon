@@ -1,0 +1,246 @@
+INFO - main.py - 2023-04-16 19:22:36,255 - Using device: cuda:1
+INFO - main.py - 2023-04-16 19:22:36,256 - Using seed 42
+INFO - cpat_runner.py - 2023-04-16 19:22:47,126 - Optimizing the compatibility function.
+ERROR - main.py - 2023-04-16 19:24:46,394 - Traceback (most recent call last):
+  File "main.py", line 175, in main
+    runner_bproj =  BPRunner(new_config)
+  File "/home/mounted/LargeScaleOptimalTransport/baryproj/runners/BP_runner.py", line 94, in __init__
+    sys.exit(0)
+  File "/opt/anaconda3/lib/python3.8/site-packages/wandb/sdk/wandb_run.py", line 134, in exit
+    self._orig_exit(orig_code)
+SystemExit: 0
+
+INFO - main.py - 2023-04-16 20:59:18,021 - Using device: cuda:1
+INFO - main.py - 2023-04-16 20:59:18,022 - Using seed 42
+INFO - cpat_runner.py - 2023-04-16 20:59:29,157 - Optimizing the compatibility function.
+ERROR - main.py - 2023-04-16 20:59:58,871 - Traceback (most recent call last):
+  File "main.py", line 175, in main
+    runner_bproj =  BPRunner(new_config)
+  File "/home/mounted/LargeScaleOptimalTransport/baryproj/runners/BP_runner.py", line 94, in __init__
+    sys.exit(0)
+  File "/opt/anaconda3/lib/python3.8/site-packages/wandb/sdk/wandb_run.py", line 134, in exit
+    self._orig_exit(orig_code)
+SystemExit: 0
+
+INFO - main.py - 2023-04-16 21:00:26,663 - Using device: cuda:1
+INFO - main.py - 2023-04-16 21:00:26,664 - Using seed 42
+INFO - cpat_runner.py - 2023-04-16 21:00:38,345 - Optimizing the compatibility function.
+ERROR - main.py - 2023-04-16 21:01:08,480 - Traceback (most recent call last):
+  File "main.py", line 175, in main
+    runner_bproj =  BPRunner(new_config)
+  File "/home/mounted/LargeScaleOptimalTransport/baryproj/runners/BP_runner.py", line 94, in __init__
+    sys.exit(0)
+  File "/opt/anaconda3/lib/python3.8/site-packages/wandb/sdk/wandb_run.py", line 134, in exit
+    self._orig_exit(orig_code)
+SystemExit: 0
+
+INFO - main.py - 2023-04-16 21:01:37,436 - Using device: cuda:1
+INFO - main.py - 2023-04-16 21:01:37,436 - Using seed 42
+INFO - cpat_runner.py - 2023-04-16 21:01:48,517 - Optimizing the compatibility function.
+ERROR - main.py - 2023-04-16 21:02:30,310 - Traceback (most recent call last):
+  File "main.py", line 175, in main
+    runner_bproj =  BPRunner(new_config)
+  File "/home/mounted/LargeScaleOptimalTransport/baryproj/runners/BP_runner.py", line 94, in __init__
+    sys.exit(0)
+  File "/opt/anaconda3/lib/python3.8/site-packages/wandb/sdk/wandb_run.py", line 134, in exit
+    self._orig_exit(orig_code)
+SystemExit: 0
+
+INFO - main.py - 2023-04-16 21:05:06,992 - Using device: cuda:1
+INFO - main.py - 2023-04-16 21:05:06,993 - Using seed 42
+INFO - cpat_runner.py - 2023-04-16 21:05:18,589 - Optimizing the compatibility function.
+ERROR - main.py - 2023-04-16 21:06:28,691 - Traceback (most recent call last):
+  File "main.py", line 175, in main
+    runner_bproj =  BPRunner(new_config)
+  File "/home/mounted/LargeScaleOptimalTransport/baryproj/runners/BP_runner.py", line 94, in __init__
+    sys.exit(0)
+  File "/opt/anaconda3/lib/python3.8/site-packages/wandb/sdk/wandb_run.py", line 134, in exit
+    self._orig_exit(orig_code)
+SystemExit: 0
+
+INFO - main.py - 2023-04-16 21:10:41,813 - Using device: cuda:1
+INFO - main.py - 2023-04-16 21:10:41,814 - Using seed 42
+INFO - cpat_runner.py - 2023-04-16 21:10:52,149 - Optimizing the compatibility function.
+ERROR - main.py - 2023-04-16 21:11:30,135 - Traceback (most recent call last):
+  File "main.py", line 175, in main
+    runner_bproj =  BPRunner(new_config)
+  File "/home/mounted/LargeScaleOptimalTransport/baryproj/runners/BP_runner.py", line 94, in __init__
+    sys.exit(0)
+  File "/opt/anaconda3/lib/python3.8/site-packages/wandb/sdk/wandb_run.py", line 134, in exit
+    self._orig_exit(orig_code)
+SystemExit: 0
+
+INFO - main.py - 2023-04-17 10:37:57,121 - Using device: cuda:1
+INFO - main.py - 2023-04-17 10:37:57,122 - Using seed 42
+INFO - cpat_runner.py - 2023-04-17 10:38:07,326 - Optimizing the compatibility function.
+ERROR - main.py - 2023-04-17 10:38:35,780 - Traceback (most recent call last):
+  File "main.py", line 175, in main
+    runner_bproj =  BPRunner(new_config)
+  File "/home/mounted/LargeScaleOptimalTransport/baryproj/runners/BP_runner.py", line 94, in __init__
+    sys.exit(0)
+  File "/opt/anaconda3/lib/python3.8/site-packages/wandb/sdk/wandb_run.py", line 134, in exit
+    self._orig_exit(orig_code)
+SystemExit: 0
+
+INFO - main.py - 2023-04-17 12:32:41,937 - Using device: cuda:1
+INFO - main.py - 2023-04-17 12:32:41,937 - Using seed 42
+ERROR - main.py - 2023-04-17 12:32:44,262 - Traceback (most recent call last):
+  File "main.py", line 165, in main
+    runner.train()
+  File "/home/mounted/LargeScaleOptimalTransport/compatibility/runners/cpat_runner.py", line 82, in train
+    num_batches=self.config.compatibility.training.num_batches)
+AttributeError: 'Namespace' object has no attribute 'num_batches'
+
+INFO - main.py - 2023-04-17 12:33:33,570 - Using device: cuda:1
+INFO - main.py - 2023-04-17 12:33:33,571 - Using seed 42
+INFO - cpat_runner.py - 2023-04-17 12:33:43,767 - Optimizing the compatibility function.
+INFO - main.py - 2023-04-17 12:34:47,818 - Using device: cuda:1
+INFO - main.py - 2023-04-17 12:34:47,819 - Using seed 42
+INFO - cpat_runner.py - 2023-04-17 12:34:57,844 - Optimizing the compatibility function.
+INFO - main.py - 2023-04-17 12:37:52,297 - Using device: cuda:1
+INFO - main.py - 2023-04-17 12:37:52,298 - Using seed 42
+INFO - cpat_runner.py - 2023-04-17 12:38:01,866 - Optimizing the compatibility function.
+INFO - main.py - 2023-04-17 12:45:32,050 - Using device: cuda:1
+INFO - main.py - 2023-04-17 12:45:32,051 - Using seed 42
+INFO - cpat_runner.py - 2023-04-17 12:45:51,039 - Optimizing the compatibility function.
+INFO - main.py - 2023-04-17 12:47:48,576 - Using device: cuda:1
+INFO - main.py - 2023-04-17 12:47:48,577 - Using seed 42
+INFO - cpat_runner.py - 2023-04-17 12:48:06,888 - Optimizing the compatibility function.
+INFO - main.py - 2023-04-17 12:52:43,779 - Using device: cuda:1
+INFO - main.py - 2023-04-17 12:52:43,780 - Using seed 42
+INFO - cpat_runner.py - 2023-04-17 12:53:00,002 - Optimizing the compatibility function.
+INFO - main.py - 2023-04-17 12:55:03,190 - Using device: cuda:1
+INFO - main.py - 2023-04-17 12:55:03,191 - Using seed 42
+INFO - cpat_runner.py - 2023-04-17 12:55:20,889 - Optimizing the compatibility function.
+INFO - main.py - 2023-04-17 13:54:20,866 - Using device: cuda:0
+INFO - main.py - 2023-04-17 13:54:20,867 - Using seed 42
+INFO - cpat_runner.py - 2023-04-17 13:54:37,382 - Optimizing the compatibility function.
+INFO - main.py - 2023-04-17 13:55:39,340 - Using device: cuda:0
+INFO - main.py - 2023-04-17 13:55:39,341 - Using seed 42
+INFO - cpat_runner.py - 2023-04-17 13:56:00,001 - Optimizing the compatibility function.
+INFO - main.py - 2023-04-17 13:56:51,582 - Using device: cuda:0
+INFO - main.py - 2023-04-17 13:56:51,583 - Using seed 42
+INFO - cpat_runner.py - 2023-04-17 13:57:26,741 - Optimizing the compatibility function.
+INFO - main.py - 2023-04-17 14:22:12,208 - Using device: cuda:0
+INFO - main.py - 2023-04-17 14:22:12,210 - Using seed 42
+INFO - cpat_runner.py - 2023-04-17 14:22:28,823 - Optimizing the compatibility function.
+INFO - main.py - 2023-04-17 14:24:13,498 - Using device: cuda:0
+INFO - main.py - 2023-04-17 14:24:13,498 - Using seed 42
+INFO - cpat_runner.py - 2023-04-17 14:24:39,473 - Optimizing the compatibility function.
+INFO - main.py - 2023-04-17 14:26:50,161 - Using device: cuda:0
+INFO - main.py - 2023-04-17 14:26:50,162 - Using seed 42
+INFO - cpat_runner.py - 2023-04-17 14:27:09,177 - Optimizing the compatibility function.
+INFO - main.py - 2023-04-17 14:38:37,152 - Using device: cuda:0
+INFO - main.py - 2023-04-17 14:38:37,153 - Using seed 42
+INFO - cpat_runner.py - 2023-04-17 14:38:55,188 - Optimizing the compatibility function.
+INFO - main.py - 2023-04-17 14:40:50,942 - Using device: cuda:1
+INFO - main.py - 2023-04-17 14:40:50,943 - Using seed 42
+INFO - cpat_runner.py - 2023-04-17 14:41:08,766 - Optimizing the compatibility function.
+INFO - main.py - 2023-04-17 14:43:33,103 - Using device: cuda:2
+INFO - main.py - 2023-04-17 14:43:33,104 - Using seed 42
+INFO - cpat_runner.py - 2023-04-17 14:43:52,775 - Optimizing the compatibility function.
+INFO - main.py - 2023-04-17 14:57:40,370 - Using device: cuda:0
+INFO - main.py - 2023-04-17 14:57:40,371 - Using seed 42
+INFO - cpat_runner.py - 2023-04-17 14:58:00,115 - Optimizing the compatibility function.
+INFO - main.py - 2023-04-17 15:05:22,862 - Using device: cuda:0
+INFO - main.py - 2023-04-17 15:05:22,863 - Using seed 42
+INFO - cpat_runner.py - 2023-04-17 15:05:54,913 - Optimizing the compatibility function.
+INFO - main.py - 2023-04-17 15:09:14,261 - Using device: cuda:2
+INFO - main.py - 2023-04-17 15:09:14,262 - Using seed 42
+INFO - cpat_runner.py - 2023-04-17 15:09:38,209 - Optimizing the compatibility function.
+INFO - main.py - 2023-04-17 15:26:20,899 - Using device: cuda:0
+INFO - main.py - 2023-04-17 15:26:20,900 - Using seed 42
+INFO - cpat_runner.py - 2023-04-17 15:26:43,660 - Optimizing the compatibility function.
+INFO - main.py - 2023-04-17 15:52:07,000 - Using device: cuda:0
+INFO - main.py - 2023-04-17 15:52:07,001 - Using seed 42
+INFO - cpat_runner.py - 2023-04-17 15:52:27,558 - Optimizing the compatibility function.
+INFO - main.py - 2023-04-17 15:59:20,284 - Using device: cuda:0
+INFO - main.py - 2023-04-17 15:59:20,284 - Using seed 42
+INFO - cpat_runner.py - 2023-04-17 15:59:39,093 - Optimizing the compatibility function.
+INFO - main.py - 2023-04-17 16:02:32,712 - Using device: cuda:0
+INFO - main.py - 2023-04-17 16:02:32,713 - Using seed 42
+INFO - cpat_runner.py - 2023-04-17 16:02:52,086 - Optimizing the compatibility function.
+INFO - main.py - 2023-04-18 05:48:06,481 - Using device: cuda:0
+INFO - main.py - 2023-04-18 05:48:06,482 - Using seed 42
+INFO - cpat_runner.py - 2023-04-18 05:48:23,679 - Optimizing the compatibility function.
+INFO - main.py - 2023-04-18 05:50:43,187 - Using device: cuda:0
+INFO - main.py - 2023-04-18 05:50:43,188 - Using seed 42
+INFO - cpat_runner.py - 2023-04-18 05:51:00,351 - Optimizing the compatibility function.
+INFO - main.py - 2023-04-18 05:59:22,015 - Using device: cuda:0
+INFO - main.py - 2023-04-18 05:59:22,016 - Using seed 42
+INFO - cpat_runner.py - 2023-04-18 05:59:41,303 - Optimizing the compatibility function.
+INFO - main.py - 2023-04-18 06:09:36,749 - Using device: cuda:0
+INFO - main.py - 2023-04-18 06:09:36,750 - Using seed 42
+INFO - cpat_runner.py - 2023-04-18 06:09:56,764 - Optimizing the compatibility function.
+INFO - main.py - 2023-04-18 06:29:00,175 - Using device: cuda:0
+INFO - main.py - 2023-04-18 06:29:00,176 - Using seed 42
+INFO - cpat_runner.py - 2023-04-18 06:29:24,895 - Optimizing the compatibility function.
+INFO - main.py - 2023-04-18 06:44:05,430 - Using device: cuda:0
+INFO - main.py - 2023-04-18 06:44:05,431 - Using seed 42
+INFO - cpat_runner.py - 2023-04-18 06:44:22,377 - Optimizing the compatibility function.
+INFO - main.py - 2023-04-18 06:57:21,776 - Using device: cuda:0
+INFO - main.py - 2023-04-18 06:57:21,777 - Using seed 42
+INFO - cpat_runner.py - 2023-04-18 06:57:41,539 - Optimizing the compatibility function.
+INFO - main.py - 2023-04-18 07:18:10,652 - Using device: cuda:0
+INFO - main.py - 2023-04-18 07:18:10,653 - Using seed 42
+INFO - cpat_runner.py - 2023-04-18 07:18:27,019 - Optimizing the compatibility function.
+INFO - main.py - 2023-04-18 07:45:15,168 - Using device: cuda:0
+INFO - main.py - 2023-04-18 07:45:15,169 - Using seed 42
+INFO - cpat_runner.py - 2023-04-18 07:45:34,073 - Optimizing the compatibility function.
+INFO - main.py - 2023-04-18 07:45:34,315 - Using device: cuda:1
+INFO - main.py - 2023-04-18 07:45:34,316 - Using seed 42
+INFO - cpat_runner.py - 2023-04-18 07:45:52,488 - Optimizing the compatibility function.
+INFO - main.py - 2023-04-18 08:20:09,039 - Using device: cuda:1
+INFO - main.py - 2023-04-18 08:20:09,039 - Using seed 42
+INFO - cpat_runner.py - 2023-04-18 08:20:26,588 - Optimizing the compatibility function.
+INFO - main.py - 2023-04-18 08:20:28,334 - Using device: cuda:0
+INFO - main.py - 2023-04-18 08:20:28,335 - Using seed 42
+INFO - cpat_runner.py - 2023-04-18 08:20:49,091 - Optimizing the compatibility function.
+INFO - main.py - 2023-04-18 08:36:41,427 - Using device: cuda:2
+INFO - main.py - 2023-04-18 08:36:41,428 - Using seed 42
+INFO - cpat_runner.py - 2023-04-18 08:37:09,773 - Optimizing the compatibility function.
+INFO - main.py - 2023-04-18 09:47:39,706 - Using device: cuda:1
+INFO - main.py - 2023-04-18 09:47:39,707 - Using seed 42
+INFO - cpat_runner.py - 2023-04-18 09:47:57,946 - Optimizing the compatibility function.
+INFO - main.py - 2023-04-18 12:51:10,221 - Using device: cuda:1
+INFO - main.py - 2023-04-18 12:51:10,222 - Using seed 42
+INFO - cpat_runner.py - 2023-04-18 12:51:27,079 - Optimizing the compatibility function.
+INFO - main.py - 2023-04-18 12:52:29,961 - Using device: cuda:0
+INFO - main.py - 2023-04-18 12:52:29,962 - Using seed 42
+INFO - cpat_runner.py - 2023-04-18 12:52:46,563 - Optimizing the compatibility function.
+INFO - main.py - 2023-04-18 13:44:36,215 - Using device: cuda:0
+INFO - main.py - 2023-04-18 13:44:36,215 - Using seed 42
+INFO - cpat_runner.py - 2023-04-18 13:44:52,696 - Optimizing the compatibility function.
+INFO - main.py - 2023-04-18 13:50:35,705 - Using device: cuda:1
+INFO - main.py - 2023-04-18 13:50:35,705 - Using seed 42
+INFO - cpat_runner.py - 2023-04-18 13:51:07,691 - Optimizing the compatibility function.
+INFO - main.py - 2023-04-18 14:13:07,963 - Using device: cuda:2
+INFO - main.py - 2023-04-18 14:13:07,964 - Using seed 42
+INFO - cpat_runner.py - 2023-04-18 14:13:23,308 - Optimizing the compatibility function.
+INFO - main.py - 2023-04-18 14:34:42,468 - Using device: cuda:0
+INFO - main.py - 2023-04-18 14:34:42,468 - Using seed 42
+INFO - cpat_runner.py - 2023-04-18 14:35:05,399 - Optimizing the compatibility function.
+INFO - main.py - 2023-04-18 14:35:33,080 - Using device: cuda:1
+INFO - main.py - 2023-04-18 14:35:33,081 - Using seed 42
+INFO - cpat_runner.py - 2023-04-18 14:35:54,724 - Optimizing the compatibility function.
+INFO - main.py - 2023-04-18 14:46:50,830 - Using device: cuda:1
+INFO - main.py - 2023-04-18 14:46:50,830 - Using seed 42
+INFO - cpat_runner.py - 2023-04-18 14:47:07,302 - Optimizing the compatibility function.
+INFO - main.py - 2023-05-10 08:00:38,869 - Using device: cuda:0
+INFO - main.py - 2023-05-10 08:00:38,870 - Using seed 42
+INFO - cpat_runner.py - 2023-05-10 08:01:02,324 - Optimizing the compatibility function.
+INFO - main.py - 2023-05-10 08:02:23,930 - Using device: cuda:1
+INFO - main.py - 2023-05-10 08:02:23,931 - Using seed 42
+INFO - cpat_runner.py - 2023-05-10 08:02:46,616 - Optimizing the compatibility function.
+INFO - main.py - 2023-05-10 08:03:43,175 - Using device: cuda:2
+INFO - main.py - 2023-05-10 08:03:43,176 - Using seed 42
+INFO - cpat_runner.py - 2023-05-10 08:04:03,228 - Optimizing the compatibility function.
+INFO - main.py - 2023-05-10 10:22:51,605 - Using device: cuda:2
+INFO - main.py - 2023-05-10 10:22:51,606 - Using seed 42
+INFO - cpat_runner.py - 2023-05-10 10:23:16,778 - Optimizing the compatibility function.
+INFO - main.py - 2023-05-10 10:23:33,250 - Using device: cuda:1
+INFO - main.py - 2023-05-10 10:23:33,251 - Using seed 42
+INFO - cpat_runner.py - 2023-05-10 10:23:52,697 - Optimizing the compatibility function.
+INFO - main.py - 2023-05-10 10:24:33,289 - Using device: cuda:0
+INFO - main.py - 2023-05-10 10:24:33,290 - Using seed 42
+INFO - cpat_runner.py - 2023-05-10 10:24:55,013 - Optimizing the compatibility function.

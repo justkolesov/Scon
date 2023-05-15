@@ -1,0 +1,686 @@
+INFO - main.py - 2023-04-12 09:50:01,882 - Using device: cuda:0
+INFO - main.py - 2023-04-12 09:50:01,883 - Using seed 42
+ERROR - main.py - 2023-04-12 09:50:14,310 - Traceback (most recent call last):
+  File "main.py", line 163, in main
+    runner.train()
+  File "/home/mounted/LargeScaleOptimalTransport/compatibility/runners/cpat_runner.py", line 78, in train
+    cpat_opt = get_optimizer(self.config, cpat.parameters())
+  File "/home/mounted/LargeScaleOptimalTransport/compatibility/runners/cpat_runner.py", line 34, in get_optimizer
+    betas=(config.comaptibility.optim.beta1, beta2), amsgrad=config.compatibility.optim.amsgrad,
+AttributeError: 'Namespace' object has no attribute 'comaptibility'
+
+INFO - main.py - 2023-04-12 09:50:49,277 - Using device: cuda:0
+INFO - main.py - 2023-04-12 09:50:49,277 - Using seed 42
+INFO - cpat_runner.py - 2023-04-12 09:51:01,242 - Optimizing the compatibility function.
+ERROR - main.py - 2023-04-12 09:51:01,463 - Traceback (most recent call last):
+  File "main.py", line 163, in main
+    runner.train()
+  File "/home/mounted/LargeScaleOptimalTransport/compatibility/runners/cpat_runner.py", line 129, in train
+    wandb.log({"Entropy OT loss": obj_val},step=d_step)
+NameError: name 'wandb' is not defined
+
+INFO - main.py - 2023-04-12 09:51:35,468 - Using device: cuda:0
+INFO - main.py - 2023-04-12 09:51:35,470 - Using seed 42
+INFO - cpat_runner.py - 2023-04-12 09:51:47,265 - Optimizing the compatibility function.
+INFO - main.py - 2023-04-12 09:58:49,929 - Using device: cuda:0
+INFO - main.py - 2023-04-12 09:58:49,930 - Using seed 42
+INFO - cpat_runner.py - 2023-04-12 09:59:02,694 - Optimizing the compatibility function.
+INFO - main.py - 2023-04-12 10:26:03,560 - Using device: cuda:0
+INFO - main.py - 2023-04-12 10:26:03,561 - Using seed 42
+INFO - cpat_runner.py - 2023-04-12 10:26:15,822 - Optimizing the compatibility function.
+INFO - main.py - 2023-04-12 10:30:47,111 - Using device: cuda:0
+INFO - main.py - 2023-04-12 10:30:47,112 - Using seed 42
+INFO - cpat_runner.py - 2023-04-12 10:30:59,878 - Optimizing the compatibility function.
+INFO - main.py - 2023-04-12 10:31:56,413 - Using device: cuda:0
+INFO - main.py - 2023-04-12 10:31:56,413 - Using seed 42
+INFO - cpat_runner.py - 2023-04-12 10:32:08,961 - Optimizing the compatibility function.
+INFO - main.py - 2023-04-12 10:33:48,178 - Using device: cuda:0
+INFO - main.py - 2023-04-12 10:33:48,179 - Using seed 42
+INFO - cpat_runner.py - 2023-04-12 10:34:01,169 - Optimizing the compatibility function.
+INFO - main.py - 2023-04-12 11:47:31,850 - Using device: cuda:0
+INFO - main.py - 2023-04-12 11:47:31,851 - Using seed 42
+INFO - cpat_runner.py - 2023-04-12 11:47:44,588 - Optimizing the compatibility function.
+ERROR - main.py - 2023-04-12 11:48:51,363 - Traceback (most recent call last):
+  File "main.py", line 176, in main
+    runner_bproj =  BPRunner(new_config)
+  File "/home/mounted/LargeScaleOptimalTransport/baryproj/runners/BP_runner.py", line 69, in __init__
+    if not new_config.baryproj.logging.resume_training:
+NameError: name 'new_config' is not defined
+
+INFO - main.py - 2023-04-12 11:50:23,248 - Using device: cuda:0
+INFO - main.py - 2023-04-12 11:50:23,249 - Using seed 42
+INFO - cpat_runner.py - 2023-04-12 11:50:36,101 - Optimizing the compatibility function.
+ERROR - main.py - 2023-04-12 11:51:48,008 - Traceback (most recent call last):
+  File "main.py", line 176, in main
+    runner_bproj =  BPRunner(new_config)
+  File "/home/mounted/LargeScaleOptimalTransport/baryproj/runners/BP_runner.py", line 77, in __init__
+    shutil.rmtree(config.baryproj.logging.log_path)
+NameError: name 'shutil' is not defined
+
+INFO - main.py - 2023-04-12 11:52:33,262 - Using device: cuda:0
+INFO - main.py - 2023-04-12 11:52:33,262 - Using seed 42
+INFO - cpat_runner.py - 2023-04-12 11:52:46,517 - Optimizing the compatibility function.
+ERROR - main.py - 2023-04-12 11:55:25,748 - Traceback (most recent call last):
+  File "main.py", line 176, in main
+    runner_bproj =  BPRunner(new_config)
+  File "/home/mounted/LargeScaleOptimalTransport/baryproj/runners/BP_runner.py", line 79, in __init__
+    os.makedirs(config.baryptoj.logging.log_path)
+AttributeError: 'Namespace' object has no attribute 'baryptoj'
+
+INFO - main.py - 2023-04-12 11:56:01,139 - Using device: cuda:0
+INFO - main.py - 2023-04-12 11:56:01,140 - Using seed 42
+INFO - cpat_runner.py - 2023-04-12 11:56:14,514 - Optimizing the compatibility function.
+ERROR - main.py - 2023-04-12 11:57:14,981 - Traceback (most recent call last):
+  File "main.py", line 176, in main
+    runner_bproj =  BPRunner(new_config)
+  File "/home/mounted/LargeScaleOptimalTransport/baryproj/runners/BP_runner.py", line 92, in __init__
+    yaml.dump(config, f, default_flow_style=False)
+NameError: name 'yaml' is not defined
+
+INFO - main.py - 2023-04-12 11:57:32,036 - Using device: cuda:0
+INFO - main.py - 2023-04-12 11:57:32,037 - Using seed 42
+INFO - cpat_runner.py - 2023-04-12 11:57:47,962 - Optimizing the compatibility function.
+ERROR - main.py - 2023-04-12 11:58:38,909 - Traceback (most recent call last):
+  File "main.py", line 177, in main
+    runner_bproj.train()
+  File "/home/mounted/LargeScaleOptimalTransport/baryproj/runners/BP_runner.py", line 126, in train
+    states = torch.load(os.path.join(self.config.compatibility.logging.log_path, 'checkpoint.pth'),                                                                       map_location=self.config.device)
+  File "/opt/anaconda3/lib/python3.8/site-packages/torch/serialization.py", line 579, in load
+    with _open_file_like(f, 'rb') as opened_file:
+  File "/opt/anaconda3/lib/python3.8/site-packages/torch/serialization.py", line 230, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/opt/anaconda3/lib/python3.8/site-packages/torch/serialization.py", line 211, in __init__
+    super(_open_file, self).__init__(open(name, mode))
+FileNotFoundError: [Errno 2] No such file or directory: '/home/mounted/LargeScaleOptimalTransport/compatibility/exp/checkpoint.pth'
+
+INFO - main.py - 2023-04-12 11:59:56,303 - Using device: cuda:0
+INFO - main.py - 2023-04-12 11:59:56,303 - Using seed 42
+INFO - cpat_runner.py - 2023-04-12 12:00:08,796 - Optimizing the compatibility function.
+ERROR - main.py - 2023-04-12 12:00:39,639 - Traceback (most recent call last):
+  File "main.py", line 177, in main
+    runner_bproj.train()
+  File "/home/mounted/LargeScaleOptimalTransport/baryproj/runners/BP_runner.py", line 135, in train
+    cpat = get_compatibility(self.config)
+  File "/home/mounted/LargeScaleOptimalTransport/baryproj/runners/BP_runner.py", line 54, in get_compatibility
+    cnf_for_cpat = copy.deepcopy(config.compatibility)
+NameError: name 'copy' is not defined
+
+INFO - main.py - 2023-04-12 12:00:56,295 - Using device: cuda:0
+INFO - main.py - 2023-04-12 12:00:56,296 - Using seed 42
+INFO - cpat_runner.py - 2023-04-12 12:01:08,354 - Optimizing the compatibility function.
+ERROR - main.py - 2023-04-12 12:01:37,640 - Traceback (most recent call last):
+  File "main.py", line 177, in main
+    runner_bproj.train()
+  File "/home/mounted/LargeScaleOptimalTransport/baryproj/runners/BP_runner.py", line 136, in train
+    cpat = get_compatibility(self.config)
+  File "/home/mounted/LargeScaleOptimalTransport/baryproj/runners/BP_runner.py", line 60, in get_compatibility
+    return _get_compatibility(cnf_for_cpat)
+  File "/home/mounted/LargeScaleOptimalTransport/compatibility/models/__init__.py", line 21, in get_compatibility
+    if(config.compatibility.model.architecture.upper() == "FCN"):
+AttributeError: 'Namespace' object has no attribute 'compatibility'
+
+INFO - main.py - 2023-04-12 12:03:30,924 - Using device: cuda:0
+INFO - main.py - 2023-04-12 12:03:30,925 - Using seed 42
+INFO - cpat_runner.py - 2023-04-12 12:03:44,187 - Optimizing the compatibility function.
+ERROR - main.py - 2023-04-12 12:04:09,381 - Traceback (most recent call last):
+  File "main.py", line 176, in main
+    runner_bproj =  BPRunner(new_config)
+  File "/home/mounted/LargeScaleOptimalTransport/baryproj/runners/BP_runner.py", line 89, in __init__
+    sys.exit(0)
+  File "/opt/anaconda3/lib/python3.8/site-packages/wandb/sdk/wandb_run.py", line 134, in exit
+    self._orig_exit(orig_code)
+SystemExit: 0
+
+INFO - main.py - 2023-04-12 12:04:51,640 - Using device: cuda:0
+INFO - main.py - 2023-04-12 12:04:51,641 - Using seed 42
+INFO - cpat_runner.py - 2023-04-12 12:05:03,371 - Optimizing the compatibility function.
+ERROR - main.py - 2023-04-12 12:05:34,855 - Traceback (most recent call last):
+  File "main.py", line 177, in main
+    runner_bproj.train()
+  File "/home/mounted/LargeScaleOptimalTransport/baryproj/runners/BP_runner.py", line 147, in train
+    bp_opt = get_optimizer(self.config, baryproj.parameters())
+  File "/home/mounted/LargeScaleOptimalTransport/baryproj/runners/BP_runner.py", line 31, in get_optimizer
+    if config.optim.optimizer == 'Adam':
+AttributeError: 'Namespace' object has no attribute 'optim'
+
+INFO - main.py - 2023-04-12 12:07:29,174 - Using device: cuda:0
+INFO - main.py - 2023-04-12 12:07:29,174 - Using seed 42
+INFO - cpat_runner.py - 2023-04-12 12:07:40,869 - Optimizing the compatibility function.
+INFO - BP_runner.py - 2023-04-12 12:08:12,042 - Optimizing the barycentric projection of the OT map.
+ERROR - main.py - 2023-04-12 12:08:12,202 - Traceback (most recent call last):
+  File "main.py", line 177, in main
+    runner_bproj.train()
+  File "/home/mounted/LargeScaleOptimalTransport/baryproj/runners/BP_runner.py", line 195, in train
+    if(d_step  % self.config.baryptoj.training.sample_freq == 0):
+AttributeError: 'Namespace' object has no attribute 'baryptoj'
+
+INFO - main.py - 2023-04-12 12:09:18,813 - Using device: cuda:0
+INFO - main.py - 2023-04-12 12:09:18,814 - Using seed 42
+INFO - cpat_runner.py - 2023-04-12 12:09:31,867 - Optimizing the compatibility function.
+INFO - BP_runner.py - 2023-04-12 12:10:13,704 - Optimizing the barycentric projection of the OT map.
+ERROR - main.py - 2023-04-12 12:10:13,781 - Traceback (most recent call last):
+  File "main.py", line 177, in main
+    runner_bproj.train()
+  File "/home/mounted/LargeScaleOptimalTransport/baryproj/runners/BP_runner.py", line 207, in train
+    if(d_step % self.config.training.snapshot_freq == 0):
+AttributeError: 'Namespace' object has no attribute 'training'
+
+INFO - main.py - 2023-04-12 12:11:05,789 - Using device: cuda:0
+INFO - main.py - 2023-04-12 12:11:05,789 - Using seed 42
+INFO - cpat_runner.py - 2023-04-12 12:11:18,022 - Optimizing the compatibility function.
+INFO - BP_runner.py - 2023-04-12 12:12:02,738 - Optimizing the barycentric projection of the OT map.
+ERROR - main.py - 2023-04-12 12:12:02,921 - Traceback (most recent call last):
+  File "main.py", line 177, in main
+    runner_bproj.train()
+  File "/home/mounted/LargeScaleOptimalTransport/baryproj/runners/BP_runner.py", line 207, in train
+    if(d_step % self.config.baryproj.training.snapshot_freq == 0):
+AttributeError: 'Namespace' object has no attribute 'snapshot_freq'
+
+INFO - main.py - 2023-04-12 12:12:29,565 - Using device: cuda:0
+INFO - main.py - 2023-04-12 12:12:29,566 - Using seed 42
+INFO - cpat_runner.py - 2023-04-12 12:12:42,211 - Optimizing the compatibility function.
+INFO - BP_runner.py - 2023-04-12 12:13:12,093 - Optimizing the barycentric projection of the OT map.
+ERROR - main.py - 2023-04-12 12:13:12,182 - Traceback (most recent call last):
+  File "main.py", line 177, in main
+    runner_bproj.train()
+  File "/home/mounted/LargeScaleOptimalTransport/baryproj/runners/BP_runner.py", line 195, in train
+    if(d_step  % self.config.baryproj.training.sample_freq == 0):
+AttributeError: 'Namespace' object has no attribute 'sample_freq'
+
+INFO - main.py - 2023-04-12 12:14:48,226 - Using device: cuda:0
+INFO - main.py - 2023-04-12 12:14:48,227 - Using seed 42
+INFO - cpat_runner.py - 2023-04-12 12:15:00,788 - Optimizing the compatibility function.
+INFO - BP_runner.py - 2023-04-12 12:15:30,466 - Optimizing the barycentric projection of the OT map.
+ERROR - main.py - 2023-04-12 12:15:30,526 - Traceback (most recent call last):
+  File "main.py", line 177, in main
+    runner_bproj.train()
+  File "/home/mounted/LargeScaleOptimalTransport/baryproj/runners/BP_runner.py", line 195, in train
+    if(d_step  % self.config.baryproj.training.sample_freq == 0):
+AttributeError: 'Namespace' object has no attribute 'sample_freq'
+
+INFO - main.py - 2023-04-12 12:16:38,016 - Using device: cuda:0
+INFO - main.py - 2023-04-12 12:16:38,017 - Using seed 42
+INFO - cpat_runner.py - 2023-04-12 12:16:50,733 - Optimizing the compatibility function.
+INFO - BP_runner.py - 2023-04-12 12:18:43,596 - Optimizing the barycentric projection of the OT map.
+INFO - main.py - 2023-04-12 13:28:00,350 - Using device: cuda:0
+INFO - main.py - 2023-04-12 13:28:00,351 - Using seed 42
+INFO - cpat_runner.py - 2023-04-12 13:28:13,361 - Optimizing the compatibility function.
+INFO - BP_runner.py - 2023-04-12 13:28:43,158 - Optimizing the barycentric projection of the OT map.
+ERROR - main.py - 2023-04-12 13:28:43,249 - Traceback (most recent call last):
+  File "main.py", line 177, in main
+    runner_bproj.train()
+  File "/home/mounted/LargeScaleOptimalTransport/baryproj/runners/BP_runner.py", line 203, in train
+    wandb.log({'Plot mapped samples' : [wandb.Image(fig2img(fig))]}, step=d_step + self.config.compatibility.training.n_iters)
+NameError: name 'fig2img' is not defined
+
+INFO - main.py - 2023-04-12 13:30:49,915 - Using device: cuda:0
+INFO - main.py - 2023-04-12 13:30:49,916 - Using seed 42
+INFO - cpat_runner.py - 2023-04-12 13:31:03,083 - Optimizing the compatibility function.
+INFO - BP_runner.py - 2023-04-12 13:31:33,014 - Optimizing the barycentric projection of the OT map.
+ERROR - main.py - 2023-04-12 13:31:33,241 - Traceback (most recent call last):
+  File "main.py", line 177, in main
+    runner_bproj.train()
+  File "/home/mounted/LargeScaleOptimalTransport/baryproj/runners/BP_runner.py", line 203, in train
+    wandb.log({'Plot mapped samples' : [wandb.Image(fig2img(fig))]}, step=d_step + self.config.compatibility.training.n_iters)
+NameError: name 'fig2img' is not defined
+
+INFO - main.py - 2023-04-12 13:32:08,727 - Using device: cuda:0
+INFO - main.py - 2023-04-12 13:32:08,728 - Using seed 42
+INFO - cpat_runner.py - 2023-04-12 13:32:21,977 - Optimizing the compatibility function.
+INFO - BP_runner.py - 2023-04-12 13:32:53,608 - Optimizing the barycentric projection of the OT map.
+ERROR - main.py - 2023-04-12 13:32:53,784 - Traceback (most recent call last):
+  File "main.py", line 177, in main
+    runner_bproj.train()
+  File "/home/mounted/LargeScaleOptimalTransport/baryproj/runners/BP_runner.py", line 203, in train
+    wandb.log({'Plot mapped samples' : [wandb.Image(util.fig2img(fig))]}, step=d_step + self.config.compatibility.training.n_iters)
+  File "/home/mounted/LargeScaleOptimalTransport/util.py", line 44, in fig2img
+    buf = fig2data( fig )
+  File "/home/mounted/LargeScaleOptimalTransport/util.py", line 32, in fig2data
+    fig.canvas.draw( )
+AttributeError: 'PathCollection' object has no attribute 'canvas'
+
+INFO - main.py - 2023-04-12 13:40:56,582 - Using device: cuda:0
+INFO - main.py - 2023-04-12 13:40:56,583 - Using seed 42
+INFO - cpat_runner.py - 2023-04-12 13:41:09,059 - Optimizing the compatibility function.
+INFO - BP_runner.py - 2023-04-12 13:41:38,797 - Optimizing the barycentric projection of the OT map.
+INFO - main.py - 2023-04-12 13:44:11,112 - Using device: cuda:0
+INFO - main.py - 2023-04-12 13:44:11,113 - Using seed 42
+INFO - cpat_runner.py - 2023-04-12 13:44:24,311 - Optimizing the compatibility function.
+INFO - BP_runner.py - 2023-04-12 13:58:48,960 - Optimizing the barycentric projection of the OT map.
+INFO - main.py - 2023-04-12 14:06:37,396 - Using device: cuda:0
+INFO - main.py - 2023-04-12 14:06:37,397 - Using seed 42
+INFO - cpat_runner.py - 2023-04-12 14:06:51,009 - Optimizing the compatibility function.
+INFO - BP_runner.py - 2023-04-12 14:08:40,343 - Optimizing the barycentric projection of the OT map.
+INFO - main.py - 2023-04-12 14:27:51,089 - Using device: cuda:0
+INFO - main.py - 2023-04-12 14:27:51,090 - Using seed 42
+INFO - cpat_runner.py - 2023-04-12 14:28:03,565 - Optimizing the compatibility function.
+INFO - BP_runner.py - 2023-04-12 14:29:48,909 - Optimizing the barycentric projection of the OT map.
+ERROR - main.py - 2023-04-12 14:29:53,545 - Traceback (most recent call last):
+  File "main.py", line 177, in main
+    runner_bproj.train()
+  File "/home/mounted/LargeScaleOptimalTransport/baryproj/runners/BP_runner.py", line 246, in train
+    stats = get_rotated_gaussian_benchmark_stats(self.config.source.data.dim, self.config.transport.coeff, 'cpu',True)
+NameError: name 'get_rotated_gaussian_benchmark_stats' is not defined
+
+INFO - main.py - 2023-04-12 14:31:16,218 - Using device: cuda:0
+INFO - main.py - 2023-04-12 14:31:16,219 - Using seed 42
+INFO - cpat_runner.py - 2023-04-12 14:31:29,392 - Optimizing the compatibility function.
+INFO - BP_runner.py - 2023-04-12 14:33:13,849 - Optimizing the barycentric projection of the OT map.
+ERROR - main.py - 2023-04-12 14:33:20,355 - Traceback (most recent call last):
+  File "main.py", line 177, in main
+    runner_bproj.train()
+  File "/home/mounted/LargeScaleOptimalTransport/baryproj/runners/BP_runner.py", line 262, in train
+    mapped = baryproj(Xs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/torch/nn/modules/module.py", line 889, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/home/mounted/LargeScaleOptimalTransport/compatibility/models/simple.py", line 37, in forward
+    return self.out(inp)
+  File "/opt/anaconda3/lib/python3.8/site-packages/torch/nn/modules/module.py", line 889, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/torch/nn/modules/container.py", line 119, in forward
+    input = module(input)
+  File "/opt/anaconda3/lib/python3.8/site-packages/torch/nn/modules/module.py", line 889, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/torch/nn/modules/linear.py", line 94, in forward
+    return F.linear(input, self.weight, self.bias)
+  File "/opt/anaconda3/lib/python3.8/site-packages/torch/nn/functional.py", line 1753, in linear
+    return torch._C._nn.linear(input, weight, bias)
+RuntimeError: Tensor for argument #2 'mat1' is on CPU, but expected it to be on GPU (while checking arguments for addmm)
+
+INFO - main.py - 2023-04-12 14:33:58,567 - Using device: cuda:0
+INFO - main.py - 2023-04-12 14:33:58,568 - Using seed 42
+INFO - cpat_runner.py - 2023-04-12 14:34:12,161 - Optimizing the compatibility function.
+INFO - BP_runner.py - 2023-04-12 14:35:57,777 - Optimizing the barycentric projection of the OT map.
+ERROR - main.py - 2023-04-12 14:36:04,610 - Traceback (most recent call last):
+  File "main.py", line 177, in main
+    runner_bproj.train()
+  File "/home/mounted/LargeScaleOptimalTransport/baryproj/runners/BP_runner.py", line 274, in train
+    bw_uvp_plan =  compute_BW_UVP_with_gt_stats(concat_samples,
+  File "../EntropicOTBenchmark/benchmark/metrics.py", line 17, in compute_BW_UVP_with_gt_stats
+    model_samples_covariance = np.cov(model_samples.T)
+  File "<__array_function__ internals>", line 5, in cov
+  File "/opt/anaconda3/lib/python3.8/site-packages/numpy/lib/function_base.py", line 2396, in cov
+    raise ValueError("m has more than 2 dimensions")
+ValueError: m has more than 2 dimensions
+
+INFO - main.py - 2023-04-12 14:38:28,077 - Using device: cuda:0
+INFO - main.py - 2023-04-12 14:38:28,077 - Using seed 42
+INFO - cpat_runner.py - 2023-04-12 14:38:41,524 - Optimizing the compatibility function.
+INFO - BP_runner.py - 2023-04-12 14:40:36,549 - Optimizing the barycentric projection of the OT map.
+INFO - main.py - 2023-04-12 14:51:00,604 - Using device: cuda:0
+INFO - main.py - 2023-04-12 14:51:00,604 - Using seed 42
+INFO - cpat_runner.py - 2023-04-12 14:51:13,034 - Optimizing the compatibility function.
+INFO - BP_runner.py - 2023-04-12 14:54:18,182 - Optimizing the barycentric projection of the OT map.
+ERROR - main.py - 2023-04-12 14:54:23,743 - Traceback (most recent call last):
+  File "main.py", line 177, in main
+    runner_bproj.train()
+  File "/home/mounted/LargeScaleOptimalTransport/baryproj/runners/BP_runner.py", line 272, in train
+    bw_uvp_terminal = compute_BW_UVP_with_gt_stats(model_samples,
+  File "../EntropicOTBenchmark/benchmark/metrics.py", line 19, in compute_BW_UVP_with_gt_stats
+    model_samples_covariance_sqrt = symmetrize(sqrtm(model_samples_covariance))
+  File "/opt/anaconda3/lib/python3.8/site-packages/scipy/linalg/_matfuncs_sqrtm.py", line 161, in sqrtm
+    A = _asarray_validated(A, check_finite=True, as_inexact=True)
+  File "/opt/anaconda3/lib/python3.8/site-packages/scipy/_lib/_util.py", line 272, in _asarray_validated
+    a = toarray(a)
+  File "/opt/anaconda3/lib/python3.8/site-packages/numpy/lib/function_base.py", line 485, in asarray_chkfinite
+    raise ValueError(
+ValueError: array must not contain infs or NaNs
+
+INFO - main.py - 2023-04-12 14:55:49,448 - Using device: cuda:0
+INFO - main.py - 2023-04-12 14:55:49,448 - Using seed 42
+INFO - cpat_runner.py - 2023-04-12 14:56:01,348 - Optimizing the compatibility function.
+INFO - BP_runner.py - 2023-04-12 14:59:06,078 - Optimizing the barycentric projection of the OT map.
+INFO - main.py - 2023-04-12 15:22:18,553 - Using device: cuda:0
+INFO - main.py - 2023-04-12 15:22:18,554 - Using seed 42
+INFO - cpat_runner.py - 2023-04-12 15:22:32,069 - Optimizing the compatibility function.
+INFO - BP_runner.py - 2023-04-12 15:24:17,285 - Optimizing the barycentric projection of the OT map.
+INFO - main.py - 2023-04-12 19:46:36,002 - Using device: cuda:0
+INFO - main.py - 2023-04-12 19:46:36,003 - Using seed 42
+INFO - cpat_runner.py - 2023-04-12 19:46:48,692 - Optimizing the compatibility function.
+INFO - BP_runner.py - 2023-04-12 19:48:36,352 - Optimizing the barycentric projection of the OT map.
+ERROR - main.py - 2023-04-12 19:48:36,365 - Traceback (most recent call last):
+  File "main.py", line 177, in main
+    runner_bproj.train()
+  File "/home/mounted/LargeScaleOptimalTransport/baryproj/runners/BP_runner.py", line 189, in train
+    obj = bp_opt.step(lambda: self._bp_closure(Xs, Xt, cpat, baryproj, bp_opt))
+  File "/opt/anaconda3/lib/python3.8/site-packages/torch/optim/optimizer.py", line 89, in wrapper
+    return func(*args, **kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/torch/autograd/grad_mode.py", line 27, in decorate_context
+    return func(*args, **kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/torch/optim/adam.py", line 66, in step
+    loss = closure()
+  File "/home/mounted/LargeScaleOptimalTransport/baryproj/runners/BP_runner.py", line 189, in <lambda>
+    obj = bp_opt.step(lambda: self._bp_closure(Xs, Xt, cpat, baryproj, bp_opt))
+  File "/home/mounted/LargeScaleOptimalTransport/baryproj/runners/BP_runner.py", line 297, in _bp_closure
+    plan = torch.exp((u[:, None] + v[None, :] - K) /  self.config.transport.coeff)
+TypeError: 'FCImageCritic' object is not subscriptable
+
+INFO - main.py - 2023-04-12 19:51:29,919 - Using device: cuda:0
+INFO - main.py - 2023-04-12 19:51:29,920 - Using seed 42
+INFO - cpat_runner.py - 2023-04-12 19:51:42,291 - Optimizing the compatibility function.
+INFO - BP_runner.py - 2023-04-12 19:53:27,965 - Optimizing the barycentric projection of the OT map.
+ERROR - main.py - 2023-04-12 19:53:27,973 - Traceback (most recent call last):
+  File "main.py", line 177, in main
+    runner_bproj.train()
+  File "/home/mounted/LargeScaleOptimalTransport/baryproj/runners/BP_runner.py", line 189, in train
+    obj = bp_opt.step(lambda: self._bp_closure(Xs, Xt, cpat, baryproj, bp_opt))
+  File "/opt/anaconda3/lib/python3.8/site-packages/torch/optim/optimizer.py", line 89, in wrapper
+    return func(*args, **kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/torch/autograd/grad_mode.py", line 27, in decorate_context
+    return func(*args, **kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/torch/optim/adam.py", line 66, in step
+    loss = closure()
+  File "/home/mounted/LargeScaleOptimalTransport/baryproj/runners/BP_runner.py", line 189, in <lambda>
+    obj = bp_opt.step(lambda: self._bp_closure(Xs, Xt, cpat, baryproj, bp_opt))
+  File "/home/mounted/LargeScaleOptimalTransport/baryproj/runners/BP_runner.py", line 297, in _bp_closure
+    plan = torch.exp((u(x)[:, None] + v(y)[None, :] - K) /  self.config.transport.coeff)
+NameError: name 'x' is not defined
+
+INFO - main.py - 2023-04-12 19:53:55,676 - Using device: cuda:0
+INFO - main.py - 2023-04-12 19:53:55,676 - Using seed 42
+INFO - cpat_runner.py - 2023-04-12 19:54:07,706 - Optimizing the compatibility function.
+INFO - BP_runner.py - 2023-04-12 19:55:52,771 - Optimizing the barycentric projection of the OT map.
+ERROR - main.py - 2023-04-12 19:55:58,591 - Traceback (most recent call last):
+  File "main.py", line 177, in main
+    runner_bproj.train()
+  File "/home/mounted/LargeScaleOptimalTransport/baryproj/runners/BP_runner.py", line 189, in train
+    obj = bp_opt.step(lambda: self._bp_closure(Xs, Xt, cpat, baryproj, bp_opt))
+  File "/opt/anaconda3/lib/python3.8/site-packages/torch/optim/optimizer.py", line 89, in wrapper
+    return func(*args, **kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/torch/autograd/grad_mode.py", line 27, in decorate_context
+    return func(*args, **kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/torch/optim/adam.py", line 66, in step
+    loss = closure()
+  File "/home/mounted/LargeScaleOptimalTransport/baryproj/runners/BP_runner.py", line 189, in <lambda>
+    obj = bp_opt.step(lambda: self._bp_closure(Xs, Xt, cpat, baryproj, bp_opt))
+  File "/home/mounted/LargeScaleOptimalTransport/baryproj/runners/BP_runner.py", line 299, in _bp_closure
+    obj.backward()
+  File "/opt/anaconda3/lib/python3.8/site-packages/torch/tensor.py", line 245, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph, inputs=inputs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/torch/autograd/__init__.py", line 145, in backward
+    Variable._execution_engine.run_backward(
+RuntimeError: CUDA out of memory. Tried to allocate 4.00 GiB (GPU 0; 15.78 GiB total capacity; 8.58 GiB already allocated; 2.03 GiB free; 12.43 GiB reserved in total by PyTorch)
+
+INFO - main.py - 2023-04-12 19:59:12,245 - Using device: cuda:0
+INFO - main.py - 2023-04-12 19:59:12,246 - Using seed 42
+INFO - cpat_runner.py - 2023-04-12 19:59:24,567 - Optimizing the compatibility function.
+INFO - BP_runner.py - 2023-04-12 20:01:10,381 - Optimizing the barycentric projection of the OT map.
+ERROR - main.py - 2023-04-12 20:01:15,929 - Traceback (most recent call last):
+  File "main.py", line 177, in main
+    runner_bproj.train()
+  File "/home/mounted/LargeScaleOptimalTransport/baryproj/runners/BP_runner.py", line 189, in train
+    obj = bp_opt.step(lambda: self._bp_closure(Xs, Xt, cpat, baryproj, bp_opt))
+  File "/opt/anaconda3/lib/python3.8/site-packages/torch/optim/optimizer.py", line 89, in wrapper
+    return func(*args, **kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/torch/autograd/grad_mode.py", line 27, in decorate_context
+    return func(*args, **kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/torch/optim/adam.py", line 66, in step
+    loss = closure()
+  File "/home/mounted/LargeScaleOptimalTransport/baryproj/runners/BP_runner.py", line 189, in <lambda>
+    obj = bp_opt.step(lambda: self._bp_closure(Xs, Xt, cpat, baryproj, bp_opt))
+  File "/home/mounted/LargeScaleOptimalTransport/baryproj/runners/BP_runner.py", line 299, in _bp_closure
+    obj.backward()
+  File "/opt/anaconda3/lib/python3.8/site-packages/torch/tensor.py", line 245, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph, inputs=inputs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/torch/autograd/__init__.py", line 145, in backward
+    Variable._execution_engine.run_backward(
+RuntimeError: CUDA out of memory. Tried to allocate 4.00 GiB (GPU 0; 15.78 GiB total capacity; 8.58 GiB already allocated; 2.03 GiB free; 12.43 GiB reserved in total by PyTorch)
+
+INFO - main.py - 2023-04-12 20:02:31,214 - Using device: cuda:0
+INFO - main.py - 2023-04-12 20:02:31,215 - Using seed 42
+INFO - cpat_runner.py - 2023-04-12 20:02:44,215 - Optimizing the compatibility function.
+INFO - BP_runner.py - 2023-04-12 20:04:30,276 - Optimizing the barycentric projection of the OT map.
+INFO - main.py - 2023-04-13 05:26:10,087 - Using device: cuda:0
+INFO - main.py - 2023-04-13 05:26:10,087 - Using seed 42
+INFO - cpat_runner.py - 2023-04-13 05:26:23,085 - Optimizing the compatibility function.
+INFO - BP_runner.py - 2023-04-13 05:32:12,390 - Optimizing the barycentric projection of the OT map.
+ERROR - main.py - 2023-04-13 05:32:17,841 - Traceback (most recent call last):
+  File "main.py", line 177, in main
+    runner_bproj.train()
+  File "/home/mounted/LargeScaleOptimalTransport/baryproj/runners/BP_runner.py", line 272, in train
+    bw_uvp_terminal = compute_BW_UVP_with_gt_stats(model_samples,
+  File "../EntropicOTBenchmark/benchmark/metrics.py", line 19, in compute_BW_UVP_with_gt_stats
+    model_samples_covariance_sqrt = symmetrize(sqrtm(model_samples_covariance))
+  File "/opt/anaconda3/lib/python3.8/site-packages/scipy/linalg/_matfuncs_sqrtm.py", line 161, in sqrtm
+    A = _asarray_validated(A, check_finite=True, as_inexact=True)
+  File "/opt/anaconda3/lib/python3.8/site-packages/scipy/_lib/_util.py", line 272, in _asarray_validated
+    a = toarray(a)
+  File "/opt/anaconda3/lib/python3.8/site-packages/numpy/lib/function_base.py", line 485, in asarray_chkfinite
+    raise ValueError(
+ValueError: array must not contain infs or NaNs
+
+INFO - main.py - 2023-04-13 05:33:43,061 - Using device: cuda:0
+INFO - main.py - 2023-04-13 05:33:43,062 - Using seed 42
+INFO - cpat_runner.py - 2023-04-13 05:33:55,009 - Optimizing the compatibility function.
+INFO - BP_runner.py - 2023-04-13 05:38:51,499 - Optimizing the barycentric projection of the OT map.
+INFO - main.py - 2023-04-13 05:41:47,505 - Using device: cuda:0
+INFO - main.py - 2023-04-13 05:41:47,506 - Using seed 42
+INFO - cpat_runner.py - 2023-04-13 05:41:59,421 - Optimizing the compatibility function.
+INFO - BP_runner.py - 2023-04-13 05:47:16,836 - Optimizing the barycentric projection of the OT map.
+INFO - main.py - 2023-04-13 05:52:01,069 - Using device: cuda:0
+INFO - main.py - 2023-04-13 05:52:01,069 - Using seed 42
+INFO - cpat_runner.py - 2023-04-13 05:52:17,469 - Optimizing the compatibility function.
+INFO - BP_runner.py - 2023-04-13 05:57:34,171 - Optimizing the barycentric projection of the OT map.
+INFO - main.py - 2023-04-13 09:52:16,221 - Using device: cuda:0
+INFO - main.py - 2023-04-13 09:52:16,221 - Using seed 42
+INFO - cpat_runner.py - 2023-04-13 09:52:28,841 - Optimizing the compatibility function.
+INFO - BP_runner.py - 2023-04-13 09:53:41,221 - Optimizing the barycentric projection of the OT map.
+INFO - main.py - 2023-04-13 09:55:05,099 - Using device: cuda:0
+INFO - main.py - 2023-04-13 09:55:05,100 - Using seed 42
+INFO - cpat_runner.py - 2023-04-13 09:55:16,699 - Optimizing the compatibility function.
+INFO - BP_runner.py - 2023-04-13 09:56:50,622 - Optimizing the barycentric projection of the OT map.
+INFO - main.py - 2023-04-13 09:58:17,954 - Using device: cuda:0
+INFO - main.py - 2023-04-13 09:58:17,954 - Using seed 42
+INFO - cpat_runner.py - 2023-04-13 09:58:30,564 - Optimizing the compatibility function.
+INFO - BP_runner.py - 2023-04-13 10:01:05,485 - Optimizing the barycentric projection of the OT map.
+INFO - main.py - 2023-04-13 10:03:09,280 - Using device: cuda:0
+INFO - main.py - 2023-04-13 10:03:09,281 - Using seed 42
+INFO - cpat_runner.py - 2023-04-13 10:03:22,681 - Optimizing the compatibility function.
+INFO - BP_runner.py - 2023-04-13 10:05:48,786 - Optimizing the barycentric projection of the OT map.
+INFO - main.py - 2023-04-13 10:07:11,109 - Using device: cuda:0
+INFO - main.py - 2023-04-13 10:07:11,110 - Using seed 42
+INFO - cpat_runner.py - 2023-04-13 10:07:24,236 - Optimizing the compatibility function.
+INFO - BP_runner.py - 2023-04-13 10:08:47,478 - Optimizing the barycentric projection of the OT map.
+INFO - main.py - 2023-04-13 10:09:38,595 - Using device: cuda:0
+INFO - main.py - 2023-04-13 10:09:38,596 - Using seed 42
+INFO - cpat_runner.py - 2023-04-13 10:09:55,559 - Optimizing the compatibility function.
+INFO - BP_runner.py - 2023-04-13 10:12:05,976 - Optimizing the barycentric projection of the OT map.
+INFO - main.py - 2023-04-13 10:13:22,438 - Using device: cuda:0
+INFO - main.py - 2023-04-13 10:13:22,439 - Using seed 42
+INFO - cpat_runner.py - 2023-04-13 10:13:34,026 - Optimizing the compatibility function.
+INFO - BP_runner.py - 2023-04-13 10:14:57,771 - Optimizing the barycentric projection of the OT map.
+INFO - main.py - 2023-04-13 10:16:27,616 - Using device: cuda:0
+INFO - main.py - 2023-04-13 10:16:27,617 - Using seed 42
+INFO - cpat_runner.py - 2023-04-13 10:16:40,220 - Optimizing the compatibility function.
+INFO - BP_runner.py - 2023-04-13 10:19:23,395 - Optimizing the barycentric projection of the OT map.
+INFO - main.py - 2023-04-13 10:21:55,494 - Using device: cuda:0
+INFO - main.py - 2023-04-13 10:21:55,495 - Using seed 42
+INFO - cpat_runner.py - 2023-04-13 10:22:07,953 - Optimizing the compatibility function.
+INFO - BP_runner.py - 2023-04-13 10:23:27,615 - Optimizing the barycentric projection of the OT map.
+INFO - main.py - 2023-04-13 10:24:56,384 - Using device: cuda:0
+INFO - main.py - 2023-04-13 10:24:56,385 - Using seed 42
+INFO - cpat_runner.py - 2023-04-13 10:25:08,687 - Optimizing the compatibility function.
+INFO - BP_runner.py - 2023-04-13 10:26:15,767 - Optimizing the barycentric projection of the OT map.
+INFO - main.py - 2023-04-13 11:20:51,625 - Using device: cuda:0
+INFO - main.py - 2023-04-13 11:20:51,626 - Using seed 42
+INFO - cpat_runner.py - 2023-04-13 11:21:04,112 - Optimizing the compatibility function.
+INFO - BP_runner.py - 2023-04-13 11:26:24,078 - Optimizing the barycentric projection of the OT map.
+INFO - main.py - 2023-04-13 12:23:17,210 - Using device: cuda:0
+INFO - main.py - 2023-04-13 12:23:17,211 - Using seed 42
+INFO - cpat_runner.py - 2023-04-13 12:23:29,425 - Optimizing the compatibility function.
+INFO - BP_runner.py - 2023-04-13 12:32:31,840 - Optimizing the barycentric projection of the OT map.
+INFO - main.py - 2023-04-13 19:43:36,117 - Using device: cuda:0
+INFO - main.py - 2023-04-13 19:43:36,118 - Using seed 42
+INFO - cpat_runner.py - 2023-04-13 19:43:48,865 - Optimizing the compatibility function.
+INFO - main.py - 2023-04-13 19:45:15,672 - Using device: cuda:0
+INFO - main.py - 2023-04-13 19:45:15,672 - Using seed 42
+INFO - cpat_runner.py - 2023-04-13 19:45:27,579 - Optimizing the compatibility function.
+INFO - main.py - 2023-04-13 19:49:23,276 - Using device: cuda:1
+INFO - main.py - 2023-04-13 19:49:23,277 - Using seed 42
+INFO - cpat_runner.py - 2023-04-13 19:49:35,666 - Optimizing the compatibility function.
+INFO - main.py - 2023-04-13 19:51:42,621 - Using device: cuda:2
+INFO - main.py - 2023-04-13 19:51:42,621 - Using seed 42
+INFO - cpat_runner.py - 2023-04-13 19:51:55,228 - Optimizing the compatibility function.
+INFO - BP_runner.py - 2023-04-13 19:53:03,626 - Optimizing the barycentric projection of the OT map.
+ERROR - main.py - 2023-04-13 20:00:46,300 - Traceback (most recent call last):
+  File "main.py", line 175, in main
+    runner_bproj =  BPRunner(new_config)
+  File "/home/mounted/LargeScaleOptimalTransport/baryproj/runners/BP_runner.py", line 94, in __init__
+    sys.exit(0)
+  File "/opt/anaconda3/lib/python3.8/site-packages/wandb/sdk/wandb_run.py", line 134, in exit
+    self._orig_exit(orig_code)
+SystemExit: 0
+
+INFO - BP_runner.py - 2023-04-13 20:02:12,919 - Optimizing the barycentric projection of the OT map.
+INFO - main.py - 2023-04-13 20:12:03,397 - Using device: cuda:2
+INFO - main.py - 2023-04-13 20:12:03,399 - Using seed 42
+INFO - cpat_runner.py - 2023-04-13 20:12:18,168 - Optimizing the compatibility function.
+INFO - BP_runner.py - 2023-04-13 20:22:20,039 - Optimizing the barycentric projection of the OT map.
+INFO - main.py - 2023-04-13 20:24:29,661 - Using device: cuda:0
+INFO - main.py - 2023-04-13 20:24:29,662 - Using seed 42
+INFO - cpat_runner.py - 2023-04-13 20:24:41,504 - Optimizing the compatibility function.
+INFO - main.py - 2023-04-13 20:24:50,155 - Using device: cuda:1
+INFO - main.py - 2023-04-13 20:24:50,156 - Using seed 42
+INFO - cpat_runner.py - 2023-04-13 20:25:02,104 - Optimizing the compatibility function.
+INFO - BP_runner.py - 2023-04-13 20:38:49,501 - Optimizing the barycentric projection of the OT map.
+INFO - BP_runner.py - 2023-04-13 20:38:59,794 - Optimizing the barycentric projection of the OT map.
+INFO - main.py - 2023-04-14 05:48:22,388 - Using device: cuda:0
+INFO - main.py - 2023-04-14 05:48:22,389 - Using seed 42
+INFO - cpat_runner.py - 2023-04-14 05:48:35,352 - Optimizing the compatibility function.
+INFO - main.py - 2023-04-14 05:48:46,445 - Using device: cuda:1
+INFO - main.py - 2023-04-14 05:48:46,446 - Using seed 42
+INFO - cpat_runner.py - 2023-04-14 05:48:58,175 - Optimizing the compatibility function.
+INFO - BP_runner.py - 2023-04-14 05:56:36,866 - Optimizing the barycentric projection of the OT map.
+INFO - BP_runner.py - 2023-04-14 05:57:01,760 - Optimizing the barycentric projection of the OT map.
+INFO - main.py - 2023-04-17 12:08:34,214 - Using device: cuda:2
+INFO - main.py - 2023-04-17 12:08:34,215 - Using seed 42
+ERROR - main.py - 2023-04-17 12:08:36,775 - Traceback (most recent call last):
+  File "main.py", line 165, in main
+    runner.train()
+  File "/home/mounted/LargeScaleOptimalTransport/compatibility/runners/cpat_runner.py", line 87, in train
+    elif self.config.meta.problem_name("images"):
+TypeError: 'str' object is not callable
+
+INFO - main.py - 2023-04-17 12:09:43,345 - Using device: cuda:2
+INFO - main.py - 2023-04-17 12:09:43,345 - Using seed 42
+ERROR - main.py - 2023-04-17 12:09:45,700 - Traceback (most recent call last):
+  File "main.py", line 165, in main
+    runner.train()
+  File "/home/mounted/LargeScaleOptimalTransport/compatibility/runners/cpat_runner.py", line 89, in train
+    benchmark = get_images_benchmark(batch_size=self.config.compatibility.training.batch_size,
+NameError: name 'get_images_benchmark' is not defined
+
+INFO - main.py - 2023-04-17 12:10:25,291 - Using device: cuda:2
+INFO - main.py - 2023-04-17 12:10:25,292 - Using seed 42
+ERROR - main.py - 2023-04-17 12:10:27,574 - Traceback (most recent call last):
+  File "main.py", line 165, in main
+    runner.train()
+  File "/home/mounted/LargeScaleOptimalTransport/compatibility/runners/cpat_runner.py", line 90, in train
+    eps=self.config.transport.coeff,glow_device=self.config.device.glow_device,
+AttributeError: 'torch.device' object has no attribute 'glow_device'
+
+INFO - main.py - 2023-04-17 12:10:57,759 - Using device: cuda:2
+INFO - main.py - 2023-04-17 12:10:57,759 - Using seed 42
+ERROR - main.py - 2023-04-17 12:11:06,313 - Traceback (most recent call last):
+  File "main.py", line 165, in main
+    runner.train()
+  File "/home/mounted/LargeScaleOptimalTransport/compatibility/runners/cpat_runner.py", line 89, in train
+    benchmark = get_image_benchmark(batch_size=self.config.compatibility.training.batch_size,
+  File "/opt/anaconda3/lib/python3.8/site-packages/eot_benchmark-0.21-py3.8.egg/eot_benchmark/image_benchmark.py", line 160, in get_image_benchmark
+    download_image_benchmark_files()
+  File "/opt/anaconda3/lib/python3.8/site-packages/eot_benchmark-0.21-py3.8.egg/eot_benchmark/image_benchmark.py", line 154, in download_image_benchmark_files
+    with ZipFile(os.path.join(path, "glow_sampler_generated_data.zip"), 'r') as zip_ref:
+  File "/opt/anaconda3/lib/python3.8/zipfile.py", line 1251, in __init__
+    self.fp = io.open(file, filemode)
+FileNotFoundError: [Errno 2] No such file or directory: '/root/eot_benchmark_data/image_benchmark/glow_sampler_generated_data.zip'
+
+INFO - main.py - 2023-04-17 12:37:13,112 - Using device: cuda:2
+INFO - main.py - 2023-04-17 12:37:13,113 - Using seed 42
+ERROR - main.py - 2023-04-17 12:37:21,353 - Traceback (most recent call last):
+  File "main.py", line 165, in main
+    runner.train()
+  File "/home/mounted/LargeScaleOptimalTransport/compatibility/runners/cpat_runner.py", line 89, in train
+    benchmark = get_image_benchmark(batch_size=self.config.compatibility.training.batch_size,
+  File "/opt/anaconda3/lib/python3.8/site-packages/eot_benchmark-0.21-py3.8.egg/eot_benchmark/image_benchmark.py", line 160, in get_image_benchmark
+    download_image_benchmark_files()
+  File "/opt/anaconda3/lib/python3.8/site-packages/eot_benchmark-0.21-py3.8.egg/eot_benchmark/image_benchmark.py", line 154, in download_image_benchmark_files
+    with ZipFile(os.path.join(path, "glow_sampler_generated_data.zip"), 'r') as zip_ref:
+  File "/opt/anaconda3/lib/python3.8/zipfile.py", line 1251, in __init__
+    self.fp = io.open(file, filemode)
+FileNotFoundError: [Errno 2] No such file or directory: '/root/eot_benchmark_data/image_benchmark/glow_sampler_generated_data.zip'
+
+INFO - main.py - 2023-04-17 13:06:18,580 - Using device: cuda:2
+INFO - main.py - 2023-04-17 13:06:18,581 - Using seed 42
+INFO - cpat_runner.py - 2023-04-17 13:08:31,718 - Optimizing the compatibility function.
+INFO - main.py - 2023-04-17 13:10:41,167 - Using device: cuda:2
+INFO - main.py - 2023-04-17 13:10:41,168 - Using seed 42
+INFO - cpat_runner.py - 2023-04-17 13:11:19,128 - Optimizing the compatibility function.
+INFO - main.py - 2023-04-17 16:11:07,000 - Using device: cuda:2
+INFO - main.py - 2023-04-17 16:11:07,001 - Using seed 42
+INFO - cpat_runner.py - 2023-04-17 16:11:44,733 - Optimizing the compatibility function.
+INFO - main.py - 2023-04-17 16:14:18,756 - Using device: cuda:2
+INFO - main.py - 2023-04-17 16:14:18,756 - Using seed 42
+ERROR - main.py - 2023-04-17 16:14:21,183 - Traceback (most recent call last):
+  File "main.py", line 165, in main
+    runner.train()
+  File "/home/mounted/LargeScaleOptimalTransport/compatibility/runners/cpat_runner.py", line 89, in train
+    benchmark = get_image_benchmark(batch_size=self.config.compatibility.training.batch_size,
+  File "/opt/anaconda3/lib/python3.8/site-packages/eot_benchmark-0.21-py3.8.egg/eot_benchmark/image_benchmark.py", line 162, in get_image_benchmark
+    X_test_sampler = load_input_test_image_sampler(eps=eps, batch_size=batch_size, device=samples_device, num_workers=num_workers)
+  File "/opt/anaconda3/lib/python3.8/site-packages/eot_benchmark-0.21-py3.8.egg/eot_benchmark/image_benchmark.py", line 108, in load_input_test_image_sampler
+    X, Y = load_test_image_pairs(eps)
+  File "/opt/anaconda3/lib/python3.8/site-packages/eot_benchmark-0.21-py3.8.egg/eot_benchmark/image_benchmark.py", line 101, in load_test_image_pairs
+    image_pairs = torch.load(path)
+  File "/opt/anaconda3/lib/python3.8/site-packages/torch/serialization.py", line 579, in load
+    with _open_file_like(f, 'rb') as opened_file:
+  File "/opt/anaconda3/lib/python3.8/site-packages/torch/serialization.py", line 230, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/opt/anaconda3/lib/python3.8/site-packages/torch/serialization.py", line 211, in __init__
+    super(_open_file, self).__init__(open(name, mode))
+FileNotFoundError: [Errno 2] No such file or directory: '/root/eot_benchmark_data/image_benchmark/glow_sampler_generated_data/glow_generated_pairs_images_eps_100.torch'
+
+INFO - main.py - 2023-04-23 08:30:04,286 - Using device: cuda:2
+INFO - main.py - 2023-04-23 08:30:04,288 - Using seed 42
+ERROR - main.py - 2023-04-23 08:30:06,648 - Traceback (most recent call last):
+  File "main.py", line 165, in main
+    runner.train()
+  File "/home/mounted/LargeScaleOptimalTransport/compatibility/runners/cpat_runner.py", line 89, in train
+    benchmark = get_image_benchmark(batch_size=self.config.compatibility.training.batch_size,
+  File "/opt/anaconda3/lib/python3.8/site-packages/eot_benchmark-0.21-py3.8.egg/eot_benchmark/image_benchmark.py", line 162, in get_image_benchmark
+    X_test_sampler = load_input_test_image_sampler(eps=eps, batch_size=batch_size, device=samples_device, num_workers=num_workers)
+  File "/opt/anaconda3/lib/python3.8/site-packages/eot_benchmark-0.21-py3.8.egg/eot_benchmark/image_benchmark.py", line 108, in load_input_test_image_sampler
+    X, Y = load_test_image_pairs(eps)
+  File "/opt/anaconda3/lib/python3.8/site-packages/eot_benchmark-0.21-py3.8.egg/eot_benchmark/image_benchmark.py", line 101, in load_test_image_pairs
+    image_pairs = torch.load(path)
+  File "/opt/anaconda3/lib/python3.8/site-packages/torch/serialization.py", line 581, in load
+    with _open_file_like(f, 'rb') as opened_file:
+  File "/opt/anaconda3/lib/python3.8/site-packages/torch/serialization.py", line 230, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/opt/anaconda3/lib/python3.8/site-packages/torch/serialization.py", line 211, in __init__
+    super(_open_file, self).__init__(open(name, mode))
+FileNotFoundError: [Errno 2] No such file or directory: '/root/eot_benchmark_data/image_benchmark/glow_sampler_generated_data/glow_generated_pairs_images_eps_100.torch'
+
+INFO - main.py - 2023-04-23 08:32:31,221 - Using device: cuda:2
+INFO - main.py - 2023-04-23 08:32:31,221 - Using seed 42
+ERROR - main.py - 2023-04-23 08:32:33,475 - Traceback (most recent call last):
+  File "main.py", line 165, in main
+    runner.train()
+  File "/home/mounted/LargeScaleOptimalTransport/compatibility/runners/cpat_runner.py", line 89, in train
+    benchmark = get_image_benchmark(batch_size=self.config.compatibility.training.batch_size,
+  File "/opt/anaconda3/lib/python3.8/site-packages/eot_benchmark-0.24-py3.8.egg/eot_benchmark/image_benchmark.py", line 162, in get_image_benchmark
+    X_test_sampler = load_input_test_image_sampler(eps=eps, batch_size=batch_size, device=samples_device, num_workers=num_workers)
+  File "/opt/anaconda3/lib/python3.8/site-packages/eot_benchmark-0.24-py3.8.egg/eot_benchmark/image_benchmark.py", line 108, in load_input_test_image_sampler
+    X, Y = load_test_image_pairs(eps)
+  File "/opt/anaconda3/lib/python3.8/site-packages/eot_benchmark-0.24-py3.8.egg/eot_benchmark/image_benchmark.py", line 101, in load_test_image_pairs
+    image_pairs = torch.load(path)
+  File "/opt/anaconda3/lib/python3.8/site-packages/torch/serialization.py", line 581, in load
+    with _open_file_like(f, 'rb') as opened_file:
+  File "/opt/anaconda3/lib/python3.8/site-packages/torch/serialization.py", line 230, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/opt/anaconda3/lib/python3.8/site-packages/torch/serialization.py", line 211, in __init__
+    super(_open_file, self).__init__(open(name, mode))
+FileNotFoundError: [Errno 2] No such file or directory: '/root/eot_benchmark_data/image_benchmark/glow_sampler_generated_data/glow_generated_pairs_images_eps_100.torch'
+
+INFO - main.py - 2023-04-23 12:28:00,654 - Using device: cuda:2
+INFO - main.py - 2023-04-23 12:28:00,655 - Using seed 42
+INFO - cpat_runner.py - 2023-04-23 12:31:15,956 - Optimizing the compatibility function.

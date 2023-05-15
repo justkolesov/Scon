@@ -1,0 +1,82 @@
+meta:
+  problem_name: "gaussians"
+logging:
+  exp: 'exp'
+  doc: 'doc'
+  resume_training: false
+  verbose_stderr: info
+  verbose_file: info
+  verbose_logger: info
+  comment : ""
+  
+source:
+  data:
+    dataset: "GAUSSIAN"
+    dim: 2
+    image_size: 0
+    channels: 0
+    logit_transform: false
+    uniform_dequantization: false
+    gaussian_dequantization: false
+    random_flip: false
+    rescaled: false
+    num_workers: 0
+    benchmark_data_path: "/home/mounted/EntropicOTBenchmark/benchmark_data"
+target:
+  data:
+    dataset: "GAUSSIAN"
+    dim: 2
+    image_size: 0
+    channels: 0
+    logit_transform: false
+    uniform_dequantization: false
+    gaussian_dequantization: false
+    random_flip: false
+    rescaled: false
+    num_workers: 0
+    benchmark_data_path: "/home/mounted/EntropicOTBenchmark/benchmark_data"
+
+transport:
+  regularization: "entropy" # l2, entropy
+  coeff: 1
+  cost: "half-l2-sq" # l2-sq, mean-l2-sq
+
+optim:
+  weight_decay: 0.000
+  optimizer: "Adam"
+  lr: 0.000001
+  beta1: 0.9
+  amsgrad: false
+  eps: 0.00000001
+
+model:
+  architecture: "fcn"
+  hidden_layers: [2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048]
+  nonlinearity: elu
+  ngf: 48
+
+training:
+  batch_size: 64
+  n_iters: 20000
+  snapshot_freq: 5000
+  sample_freq: 200
+
+compatibility:
+  log_path: "/home/mounted/LargeScaleOptimalTransport/compatibility/exp"
+  ckpt_id:
+  model:
+    architecture: "fcn"
+    hidden_layers: [2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048]
+
+sampling:
+  ckpt_id:
+  samples_per_batch: 100
+  fid: false
+  num_samples4fid: 5000
+  n_batches: 20
+
+sample: true
+fast_fid: false
+n_gpu: 2
+seed: 42
+image_folder: "images"

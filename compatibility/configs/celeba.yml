@@ -1,0 +1,134 @@
+meta:
+  problem_name: "CELEBA"
+  divergence: KL
+  regularization: 25
+  task: superres 
+    
+ 
+device_gpus:
+  glow_device: "cuda:0"
+  samples_device: "cuda:0"
+  ngpu: [0,1,2]
+ 
+compatibility:
+  logging:
+    resume_training: false
+    log_path: "/gpfs/data/gpfs0/n.gushchin/Scon/compatibility/exp/celeba"
+    verbose_stderr: "info"
+    
+  training:
+    batch_size: 64
+    num_batches: 100
+    n_iters: 5001
+    snapshot_freq: 1000
+    seed: 42
+    
+  optim:
+    amsgrad: false
+    beta1: 0.9
+    eps:  0.000000001
+    optimizer: "Adam"
+    lr: 0.00001
+    weight_decay: 0.0
+    
+  model:
+    architecture: "fcn"
+    hidden_layers: [2048,2048,2048,2048,2048,2048,2048,2048]
+    
+baryproj:
+  logging:
+    log_path: "/gpfs/data/gpfs0/n.gushchin/Scon/baryproj/exp/celeba"
+    verbose_stderr: "info"
+  training:
+    n_iters: 1    
+    
+  
+logging:
+  verbose_stderr: "info"
+  verbose_logger: "info"
+  
+scones:
+  logging:
+    log_path: "/gpfs/data/gpfs0/n.gushchin/Scon/scones/exp/celeba" 
+    verbose_stderr: "info"
+  compatibility:
+    ckpt_id: null
+    log_path: '/gpfs/data/gpfs0/n.gushchin/Scon/compatibility/exp/celeba'
+  training:
+    batch_size: 64
+    num_batches: 100
+    snapshot_iter: 100
+
+    
+ncsn:
+  ncsn_path: "/gpfs/data/gpfs0/n.gushchin/Scon/ncsn_models"
+  device: "cuda:0"
+  
+  fast_fid:
+    batch_size: 1000
+    begin_ckpt: 5000
+    end_ckpt: 210000
+    ensemble: false
+    n_steps_each: 5
+    num_sources: 1000
+    step_lr: 3.3e-06
+    verbose: false
+    
+  model:
+    ema: true
+    ema_rate: 0.999
+    ngf: 128
+    nonlinearity: elu
+    normalization: InstanceNorm++
+    num_classes: 500
+    sigma_begin: 90
+    sigma_dist: geometric
+    sigma_end: 0.01
+    spec_norm: false
+    
+  sampling:
+    ckpt_id: 210000
+    data_init: true
+    denoise: true
+    fid: true
+    final_only: true
+    inpainting: false
+    interpolation: false
+    log_path: pretrained/ncsn/celeba
+    n_interpolations: 15
+    n_steps_each: 7
+    num_samples4fid: 20259
+    samples_per_source: 1
+    sources_per_batch: 250
+    step_lr: 1.0e-06
+    
+source:
+  data:
+    channels: 3
+    dim: 12288
+    dataset: CELEBA-low
+    gaussian_dequantization: false
+    image_size: 64
+    logit_transform: false
+    num_workers: 0
+    random_flip: false
+    rescaled: false
+    uniform_dequantization: false
+    
+target:
+  data:
+    channels: 3
+    dim: 12288
+    dataset: CELEBA-high
+    gaussian_dequantization: false
+    image_size: 64
+    logit_transform: false
+    num_workers: 0
+    random_flip: false
+    rescaled: false
+    uniform_dequantization: false
+    
+transport:
+  coeff: 25
+  cost: half-l2-sq
+  regularization: entropy
